@@ -1,0 +1,6 @@
+framework module XBAlertViewController {
+  umbrella header "XBAlertViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

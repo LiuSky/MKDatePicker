@@ -1,0 +1,16 @@
+/* 
+  Language.strings
+  XBDatePicker
+
+  Created by xiaobin liu on 2020/3/17.
+  Copyright © 2020 CocoaPods. All rights reserved.
+*/
+"headerView.cancel" = "取消";
+"headerView.confirm" = "确定";
+
+"picker.year" = "年";
+"picker.month" = "月";
+"picker.day" = "日";
+"picker.hours" = "时";
+"picker.minute" = "分";
+"picker.second" = "秒";

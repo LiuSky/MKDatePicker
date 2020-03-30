@@ -1,0 +1,6 @@
+framework module Pods_MKDatePicker_Tests {
+  umbrella header "Pods-MKDatePicker_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

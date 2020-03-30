@@ -1,0 +1,12 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'MKDatePicker_Example' do
+  pod 'MKDatePicker', :path => '../'
+
+  target 'MKDatePicker_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
