@@ -26,6 +26,7 @@
 		79A61372C19EBB33374EC58D5A62E646 /* PickerViewController+MonthDayHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D9FAFBC917CCAC031B9D51E2910511 /* PickerViewController+MonthDayHourMinute.swift */; };
 		79B97308C3E0570CD711AD7C89FB13F7 /* PickerViewController+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B562345361458AF292424FBC4BB118 /* PickerViewController+Time.swift */; };
 		7B73C239F23D034CED3CAAA9CAEECBB8 /* XBAlertAnimateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D427E62317EE8CE87A06EC4599AA6E /* XBAlertAnimateType.swift */; };
+		80968F0F24347575001DE871 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80968F0E24347575001DE871 /* Delegate.swift */; };
 		8578D1E648D00BA33215BD4A83B5A1BA /* XBShowAlertView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33738967FEE76945610376A28C365401 /* XBShowAlertView+Public.swift */; };
 		85914A428D5EA1320A3D67F07F91D87E /* Langs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F51A63501069400A3EECC964A4260AEC /* Langs.bundle */; };
 		89597792516B10FBB883310F72BCAD6B /* PickerViewController+MonthDayHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1ED6505C5AA7EB60DC81D50F0794A /* PickerViewController+MonthDayHour.swift */; };
@@ -115,10 +116,10 @@
 		4BFE0D134F419E1EEBC229C990D6B48C /* XBAlertViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XBAlertViewController.debug.xcconfig; sourceTree = "<group>"; };
 		4FBF13C0B45E2FABB471422C80EFCB27 /* Pods-MKDatePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKDatePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5BEDDE8D95CAAC4F451D2F3E0D71E7BA /* PickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
-		5DAB7AA64CE22DEBE74773E1C4AC4B2D /* Pods_MKDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKDatePicker_Tests.framework; path = "Pods-MKDatePicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAB7AA64CE22DEBE74773E1C4AC4B2D /* Pods_MKDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F954B9F723E0801C9092DECE5567E11 /* PickerViewController+TimeAndSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+TimeAndSecond.swift"; sourceTree = "<group>"; };
 		62EE50C87C49C5279B49F3E75612FF3E /* PickerViewController+DateHourMinute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateHourMinute.swift"; sourceTree = "<group>"; };
-		6DB9A83DB5AB03107C2A672C99E2A4EE /* Pods_MKDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKDatePicker_Example.framework; path = "Pods-MKDatePicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DB9A83DB5AB03107C2A672C99E2A4EE /* Pods_MKDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EA0D2FB52DA4375A33F2986147E14B4 /* Pods-MKDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
 		75AB8C323485AD57E6A3AB9FA8A87258 /* PickerViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewControllerDataSource.swift; sourceTree = "<group>"; };
 		75D427E62317EE8CE87A06EC4599AA6E /* XBAlertAnimateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XBAlertAnimateType.swift; path = XBAlertViewController/Classes/XBAlertAnimateType.swift; sourceTree = "<group>"; };
@@ -126,23 +127,24 @@
 		76E25A88AE3833DF78843709AEB6F5B1 /* Pods-MKDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		78FABFCBA4373C3F2520EE7804EFCEA9 /* UIPickerView+DataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+DataSource.h"; sourceTree = "<group>"; };
 		7C71354A89D892D94D081DFE1BC2B7F3 /* Pods-MKDatePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKDatePicker_Example.modulemap"; sourceTree = "<group>"; };
+		80968F0E24347575001DE871 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		8117ABB1EBCDDF611B9F91F001BBFA1C /* XBAlertViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XBAlertViewController-Info.plist"; sourceTree = "<group>"; };
 		83A7D4D0FF4AD9AA68C52D7A0EFF7963 /* PickerDateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerDateManager.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DDDFD0DFCB62EFE524D423B2A494EE0 /* Pods-MKDatePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKDatePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
 		A0DBECCB4603F0D1D1767C00E8DEB4CE /* PickerViewController+Year.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Year.swift"; sourceTree = "<group>"; };
 		A3940106865194A06485204885B026B0 /* Pods-MKDatePicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKDatePicker_Tests-Info.plist"; sourceTree = "<group>"; };
-		A45E1C44FA1E14FAE54C6191679A02E8 /* MKDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKDatePicker.framework; path = MKDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7EA1CEC42D387962D912A84FD8F0171 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		A45E1C44FA1E14FAE54C6191679A02E8 /* MKDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EA1CEC42D387962D912A84FD8F0171 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AA9E5AA177DB9AD947F07F0E00E0B2FE /* PickerViewController+MonthDay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDay.swift"; sourceTree = "<group>"; };
-		AB097847756C6EFC379817B02F7C348C /* XBAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XBAlertViewController.framework; path = XBAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB097847756C6EFC379817B02F7C348C /* XBAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XBAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC085359D0FB5FDE6770FD1BFDDD3CC1 /* Pods-MKDatePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKDatePicker_Tests-dummy.m"; sourceTree = "<group>"; };
 		AC0D1AFE41A584E96D7A4EFBCA0C0988 /* PickerViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewControllerDelegate.swift; sourceTree = "<group>"; };
 		ADA74799C91ED6C8FC2882627B6EB4DE /* MKDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDatePicker-prefix.pch"; sourceTree = "<group>"; };
 		AE2B92AFF408264E70BC070B8C63FA9A /* MKDatePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKDatePicker.debug.xcconfig; sourceTree = "<group>"; };
 		BD63527260F923EB3DAB6654665CE9F2 /* PickerViewController+MonthDayHourMinuteSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDayHourMinuteSecond.swift"; sourceTree = "<group>"; };
-		BFD7149519935D690830BA0F0341F084 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BFD7149519935D690830BA0F0341F084 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C3790EA415F0FC747E1ABDD991A11490 /* MKDatePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKDatePicker-Info.plist"; sourceTree = "<group>"; };
 		C7140CA12DA8300E25D6604FE73EE622 /* Picker+Localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Picker+Localized.swift"; sourceTree = "<group>"; };
 		C9B2FD48486BF8C329F83F38A2931416 /* XBAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XBAlertViewController.modulemap; sourceTree = "<group>"; };
@@ -150,7 +152,7 @@
 		CB89349E160013A788730AFCDEDF7B02 /* Pods-MKDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1AA694ACFFC7F0A2453DCA29560E4B6 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		D72AE9E00ABB4A2721CD45FF084A6E88 /* PickerViewController+Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Date.swift"; sourceTree = "<group>"; };
-		D8D144887871242741588A91E5C774AF /* MKDatePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MKDatePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8D144887871242741588A91E5C774AF /* MKDatePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MKDatePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DC3D1ECAD6BB61D788E28E3330D7D240 /* MKDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKDatePicker.modulemap; sourceTree = "<group>"; };
 		DF9F0718E97CCE28C816DCAC381B2DA3 /* Pods-MKDatePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKDatePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F4E648C88545EC2B39CF60F1F470C045 /* XBShowAlertView+Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XBShowAlertView+Layout.swift"; path = "XBAlertViewController/Classes/XBShowAlertView+Layout.swift"; sourceTree = "<group>"; };
@@ -304,7 +306,6 @@
 				33738967FEE76945610376A28C365401 /* XBShowAlertView+Public.swift */,
 				95A3EEC4E0BC5A586297C80452426EEA /* Support Files */,
 			);
-			name = XBAlertViewController;
 			path = XBAlertViewController;
 			sourceTree = "<group>";
 		};
@@ -313,6 +314,7 @@
 			children = (
 				75AB8C323485AD57E6A3AB9FA8A87258 /* PickerViewControllerDataSource.swift */,
 				AC0D1AFE41A584E96D7A4EFBCA0C0988 /* PickerViewControllerDelegate.swift */,
+				80968F0E24347575001DE871 /* Delegate.swift */,
 			);
 			name = Protocol;
 			path = MKDatePicker/Classes/Protocol;
@@ -650,6 +652,7 @@
 				CC90366DF96FA85BBF6C98C02AEA14D5 /* PickerViewController+Date.swift in Sources */,
 				E5AA06B2659173F0B0D97F02025B8F1D /* PickerViewController+DateHour.swift in Sources */,
 				734C9BDBEFCA7B16C0C4E97CBA6C9259 /* PickerViewController+DateHourMinute.swift in Sources */,
+				80968F0F24347575001DE871 /* Delegate.swift in Sources */,
 				C3D77EC0946431F5CE7E699D9B99B7C7 /* PickerViewController+DateHourMinuteSecond.swift in Sources */,
 				0401CEAC3859BF07FB054E8795C9FCFD /* PickerViewController+MinuteAndSecond.swift in Sources */,
 				8EF8A40ECBCFEDEA84EC1D9307C7EE5D /* PickerViewController+MonthDay.swift in Sources */,
@@ -956,8 +959,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

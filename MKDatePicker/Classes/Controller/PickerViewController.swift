@@ -17,10 +17,10 @@ public final class PickerViewController: UIView {
     internal typealias PickerViewProtocol = PickerViewControllerDataSource & PickerViewControllerDelegate
     
     /// 取消回掉
-    public var cancelCallBack: ((_ contentView: PickerViewController) -> Void)?
+    public let cancelCallBack = Delegate<PickerViewController, Void>()
     
     /// 确定回掉
-    public var confirmCallBack: ((_ contentView: PickerViewController, _ result: Date) -> Void)?
+    public let confirmCallBack = Delegate<(PickerViewController, Date), Void>()
     
     /// 默认头部视图高度为50
     public var headerViewHeight: CGFloat = 50
@@ -257,7 +257,7 @@ extension PickerViewController: UIPickerViewDelegate {
 extension PickerViewController: PickerHeaderViewDelegate {
     
     public func dateHeaderView(_ headerView: PickerHeaderView, cancel: UIButton) {
-        cancelCallBack?(self)
+        cancelCallBack(self)
         dismiss()
     }
 
@@ -293,7 +293,7 @@ extension PickerViewController: PickerHeaderViewDelegate {
             dateString = "\(minuteList[minuteIndex].id):\(secondList[secondIndex].id)"
         }
         let date = Date(fromString: dateString, format: DateFormatType.custom(type.stringFormat))!
-        confirmCallBack?(self,date)
+        confirmCallBack((self, date))
         dismiss()
     }
 }
