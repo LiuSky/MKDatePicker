@@ -263,35 +263,7 @@ extension PickerViewController: PickerHeaderViewDelegate {
 
     public func dateHeaderView(_ headerView: PickerHeaderView, confirm: UIButton) {
         
-        var dateString: String!
-        switch type {
-        case .year:
-            dateString = yearList[yearIndex].id
-        case .yearAndMonth:
-            dateString = "\(yearList[yearIndex].id)-\(monthList[monthIndex].id)"
-        case .date:
-            dateString = "\(yearList[yearIndex].id)-\(monthList[monthIndex].id)-\(dayList[dayIndex].id)"
-        case .dateHour:
-            dateString = "\(yearList[yearIndex].id)-\(monthList[monthIndex].id)-\(dayList[dayIndex].id) \(hoursList[hoursIndex].id)"
-        case .dateHourMinute:
-            dateString = "\(yearList[yearIndex].id)-\(monthList[monthIndex].id)-\(dayList[dayIndex].id) \(hoursList[hoursIndex].id):\(minuteList[minuteIndex].id)"
-        case .dateHourMinuteSecond:
-            dateString = "\(yearList[yearIndex].id)-\(monthList[monthIndex].id)-\(dayList[dayIndex].id) \(hoursList[hoursIndex].id):\(minuteList[minuteIndex].id):\(secondList[secondIndex].id)"
-        case .monthDay:
-            dateString = "\(monthList[monthIndex].id)-\(dayList[dayIndex].id)"
-        case .monthDayHour:
-            dateString = "\(monthList[monthIndex].id)-\(dayList[dayIndex].id) \(hoursList[hoursIndex].id)"
-        case .monthDayHourMinute:
-            dateString = "\(monthList[monthIndex].id)-\(dayList[dayIndex].id) \(hoursList[hoursIndex].id):\(minuteList[minuteIndex].id)"
-        case .monthDayHourMinuteSecond:
-            dateString = "\(monthList[monthIndex].id)-\(dayList[dayIndex].id) \(hoursList[hoursIndex].id):\(minuteList[minuteIndex].id):\(secondList[secondIndex].id)"
-        case .time:
-            dateString = "\(hoursList[hoursIndex].id):\(minuteList[minuteIndex].id)"
-        case .timeAndSecond:
-            dateString = "\(hoursList[hoursIndex].id):\(minuteList[minuteIndex].id):\(secondList[secondIndex].id)"
-        case .minuteAndSecond:
-            dateString = "\(minuteList[minuteIndex].id):\(secondList[secondIndex].id)"
-        }
+        let dateString = pickerViewProtocol.pickerContentView(self)
         let date = Date(fromString: dateString, format: DateFormatType.custom(type.stringFormat))!
         confirmCallBack((self, date))
         dismiss()

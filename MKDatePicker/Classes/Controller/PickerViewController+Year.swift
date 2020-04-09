@@ -81,4 +81,14 @@ extension PickerViewController.Year: PickerViewControllerDelegate {
     public func pickerContentView(_ contentView: PickerViewController, didSelectRow row: Int, inComponent component: Int) {
         contentView.yearIndex = row
     }
+    
+    /// 获取日期字符串
+    ///
+    /// - Parameters:
+    ///   - contentView: contentView description
+    ///   - row: row description
+    ///   - component: component description
+    func pickerContentView(_ contentView: PickerViewController) -> String {
+        return "\(contentView.yearList[contentView.yearIndex].id)"
+    }
 }

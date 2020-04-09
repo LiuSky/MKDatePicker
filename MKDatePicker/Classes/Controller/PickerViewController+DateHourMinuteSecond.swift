@@ -314,5 +314,15 @@ extension PickerViewController.DateHourMinuteSecond: PickerViewControllerDelegat
             contentView.secondIndex = row
         }
     }
+    
+    /// 获取日期字符串
+    ///
+    /// - Parameters:
+    ///   - contentView: contentView description
+    ///   - row: row description
+    ///   - component: component description
+    func pickerContentView(_ contentView: PickerViewController) -> String {
+        return "\(contentView.yearList[contentView.yearIndex].id)-\(contentView.monthList[contentView.monthIndex].id)-\(contentView.dayList[contentView.dayIndex].id) \(contentView.hoursList[contentView.hoursIndex].id):\(contentView.minuteList[contentView.minuteIndex].id):\(contentView.secondList[contentView.secondIndex].id)"
+    }
 }
 

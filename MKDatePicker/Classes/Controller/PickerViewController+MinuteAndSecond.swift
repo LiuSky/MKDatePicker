@@ -111,6 +111,16 @@ extension PickerViewController.MinuteAndSecond: PickerViewControllerDelegate {
             contentView.secondIndex = row
         }
     }
+    
+    /// 获取日期字符串
+    ///
+    /// - Parameters:
+    ///   - contentView: contentView description
+    ///   - row: row description
+    ///   - component: component description
+    func pickerContentView(_ contentView: PickerViewController) -> String {
+        return "\(contentView.minuteList[contentView.minuteIndex].id):\(contentView.secondList[contentView.secondIndex].id)"
+    }
 }
 
 

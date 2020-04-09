@@ -187,12 +187,12 @@ extension ViewController: UITableViewDelegate {
         contentView.maximumDate = maximumDate
         contentView.minimumDate = minimumDate
         contentView.selectedAttributes = selectedAttributes
-        contentView.confirmCallBack.delegate(on: self, block: { (self, arg1) in
+        contentView.confirmCallBack.delegate(on: self, block: { (weakSelf, arg1) in
             let (_, result) = arg1
             debugPrint(result.toString(format: dateFormatType))
         })
-        contentView.cancelCallBack.delegate(on: self) { (self, view) in
-            debugPrint(self)
+        contentView.cancelCallBack.delegate(on: self) { (weakSelf, view) in
+            debugPrint(weakSelf)
         }
         contentView.show()
         tableView.deselectRow(at: indexPath, animated: true)
