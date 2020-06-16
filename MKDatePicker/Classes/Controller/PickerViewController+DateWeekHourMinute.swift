@@ -1,5 +1,5 @@
 //
-//  PickerViewController+DateWeakHourMinute.swift
+//  PickerViewController+DateWeekHourMinute.swift
 //  MKDatePicker
 //
 //  Created by xiaobin liu on 2020/6/15.
@@ -7,15 +7,15 @@
 
 import UIKit
 
-/// MARK - PickerViewController + DateWeakHourMinute
+/// MARK - PickerViewController + DateWeekHourMinute
 extension PickerViewController {
     
     /// 日期周时分
-    final class DateWeakHourMinute: NSObject {}
+    final class DateWeekHourMinute: NSObject {}
 }
 
 /// MARK - PickerViewControllerDataSource
-extension PickerViewController.DateWeakHourMinute: PickerViewControllerDataSource {
+extension PickerViewController.DateWeekHourMinute: PickerViewControllerDataSource {
     
     /// 初始化
     /// - Parameter contentView: contentView description
@@ -43,7 +43,7 @@ extension PickerViewController.DateWeakHourMinute: PickerViewControllerDataSourc
     
     /// 默认选中
     public func pickerDefaultSelected(_ contentView: PickerViewController) {
-        contentView.selectRow(contentView.weakIndex, inComponent: 0, animated: true)
+        contentView.selectRow(contentView.weekIndex, inComponent: 0, animated: true)
         contentView.selectRow(contentView.hoursIndex, inComponent: 1, animated: true)
         contentView.selectRow(contentView.minuteIndex, inComponent: 2, animated: true)
     }
@@ -71,7 +71,7 @@ extension PickerViewController.DateWeakHourMinute: PickerViewControllerDataSourc
     public func pickerContentView(_ contentView: PickerViewController, numberOfRowsInComponent component: Int) -> Int {
         switch component {
         case 0:
-            return contentView.dateWeakList.count
+            return contentView.dateWeekList.count
         case 1:
             return contentView.hoursList.count
         default:
@@ -90,7 +90,7 @@ extension PickerViewController.DateWeakHourMinute: PickerViewControllerDataSourc
     public func pickerContentView(_ contentView: PickerViewController, titleForRow row: Int, forComponent component: Int) -> String {
         switch component {
         case 0:
-            return contentView.dateWeakList[row].name
+            return contentView.dateWeekList[row].name
         case 1:
             return contentView.hoursList[row].name
         default:
@@ -100,7 +100,7 @@ extension PickerViewController.DateWeakHourMinute: PickerViewControllerDataSourc
 }
 
 /// MARK - PickerViewControllerDelegate
-extension PickerViewController.DateWeakHourMinute: PickerViewControllerDelegate {
+extension PickerViewController.DateWeekHourMinute: PickerViewControllerDelegate {
     
     /// 选中索引
     ///
@@ -114,7 +114,7 @@ extension PickerViewController.DateWeakHourMinute: PickerViewControllerDelegate 
             
             let hoursString = contentView.hoursList[contentView.hoursIndex].id
             let minuteString = contentView.minuteList[contentView.minuteIndex].id
-            contentView.weakIndex = row
+            contentView.weekIndex = row
             do {
                 
                 /// 重新计算小时索引
@@ -157,6 +157,6 @@ extension PickerViewController.DateWeakHourMinute: PickerViewControllerDelegate 
     ///   - row: row description
     ///   - component: component description
     func pickerContentView(_ contentView: PickerViewController) -> String {
-        return "\(contentView.dateWeakList[contentView.weakIndex].id)" + " " + "\(contentView.hoursList[contentView.hoursIndex].id):\(contentView.minuteList[contentView.minuteIndex].id)"
+        return "\(contentView.dateWeekList[contentView.weekIndex].id)" + " " + "\(contentView.hoursList[contentView.hoursIndex].id):\(contentView.minuteList[contentView.minuteIndex].id)"
     }
 }

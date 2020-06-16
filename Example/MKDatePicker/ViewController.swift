@@ -29,6 +29,7 @@ final class ViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.title = "日期选择器Demo"
         view.addSubview(tableView)
+        
         NSLayoutConstraint.activate([
             tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
@@ -177,7 +178,7 @@ extension ViewController: UITableViewDelegate {
             minimumDate = dfmatter.date(from: "07:02")
             maximumDate = dfmatter.date(from: "55:34")
             selectDate = dfmatter.date(from: "08:08")
-        case .dateWeakHourMinute:
+        case .dateWeekHourMinute:
             dfmatter.dateFormat = "yyyy-MM-dd HH:mm"
             headerTitle = "选择日期"
             dateFormatType = DateFormatType.custom("yyyy-MM-dd HH:mm")

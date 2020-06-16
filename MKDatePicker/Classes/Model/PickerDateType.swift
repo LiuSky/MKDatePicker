@@ -25,7 +25,7 @@ public enum PickerDateType: Int, CaseIterable {
     case time
     case timeAndSecond
     case minuteAndSecond
-    case dateWeakHourMinute
+    case dateWeekHourMinute
     
     /// 名称
     public var name: String {
@@ -56,7 +56,7 @@ public enum PickerDateType: Int, CaseIterable {
             return "时分秒"
         case .minuteAndSecond:
             return "分秒"
-        case .dateWeakHourMinute:
+        case .dateWeekHourMinute:
             return "年月周时分"
         }
     }
@@ -91,7 +91,7 @@ public enum PickerDateType: Int, CaseIterable {
             return "HH:mm:ss"
         case .minuteAndSecond:
             return "mm:ss"
-        case .dateWeakHourMinute:
+        case .dateWeekHourMinute:
             return "yyyy-MM-dd HH:mm"
         }
     }
@@ -126,7 +126,7 @@ public enum PickerDateType: Int, CaseIterable {
             return 3
         case .minuteAndSecond:
             return 2
-        case .dateWeakHourMinute:
+        case .dateWeekHourMinute:
             return 3
         }
     }

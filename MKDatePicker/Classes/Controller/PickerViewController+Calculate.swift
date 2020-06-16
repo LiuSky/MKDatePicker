@@ -62,8 +62,8 @@ internal extension PickerViewController {
             let dateString = monthList[monthIndex].id + "-" + dayList[dayIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("MM-dd"))!
             hoursList = dateManager.findCurrentHours(date: date)
-        case .dateWeakHourMinute:
-            let date = Date(fromString: dateWeakList[weakIndex].id, format: DateFormatType.custom("yyyy-MM-dd"))!
+        case .dateWeekHourMinute:
+            let date = Date(fromString: dateWeekList[weekIndex].id, format: DateFormatType.custom("yyyy-MM-dd"))!
             hoursList = dateManager.findCurrentHours(date: date)
         default:
             let currentString = Date().toString(format: DateFormatType.custom("HH:mm"))
@@ -87,8 +87,8 @@ internal extension PickerViewController {
             let dateString = hoursList[hoursIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("HH"))!
             minuteList = dateManager.findCurrentMinute(date: date)
-        case .dateWeakHourMinute:
-            let date = Date(fromString: dateWeakList[weakIndex].id + " " + hoursList[hoursIndex].id, format: DateFormatType.custom("yyyy-MM-dd HH"))!
+        case .dateWeekHourMinute:
+            let date = Date(fromString: dateWeekList[weekIndex].id + " " + hoursList[hoursIndex].id, format: DateFormatType.custom("yyyy-MM-dd HH"))!
             minuteList = dateManager.findCurrentMinute(date: date)
         default:
             let currentString = Date().toString(format: DateFormatType.custom("mm:ss"))
@@ -125,11 +125,11 @@ internal extension PickerViewController {
         let avg = dateManager.findMinDateAndMaxDate()
         let interval = dateManager.findIntervalDay(start: avg.min, end: avg.max)
         
-        dateWeakList = []
+        dateWeekList = []
         for item in (0...interval) {
             let new = Date(timeInterval: Date.dayInSeconds * Double(item), since: avg.min)
             let dateString = new.toString(format: DateFormatType.custom("yyyy-MM-dd"))
-            dateWeakList.append(PickerDateModel(id: dateString, name: dateManager.dateConversion(new)))
+            dateWeekList.append(PickerDateModel(id: dateString, name: dateManager.dateConversion(new)))
         }
     }
     
@@ -191,6 +191,6 @@ internal extension PickerViewController {
     /// - Parameter date: date
     func calculateDateWeakIndex(_ date: Date) {
         let dateString = date.toString(format: DateFormatType.custom("yyyy-MM-dd"))
-        weakIndex = dateWeakList.firstIndex(of: PickerDateModel(id: dateString, name: "")) ?? 0
+        weekIndex = dateWeekList.firstIndex(of: PickerDateModel(id: dateString, name: "")) ?? 0
     }
 }
