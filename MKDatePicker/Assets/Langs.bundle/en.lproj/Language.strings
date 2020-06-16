@@ -17,3 +17,11 @@
 "picker.minute" = "M";
 "picker.second" = "S";
 
+"picker.monday" = "Mon"
+"picker.tuesday" = "Tue"
+"picker.wednesday" = "Wed"
+"picker.thursday" = "Thu"
+"picker.friday" = "Fri"
+"picker.saturday" = "Sat"
+"picker.sunday" = "Sun"
+"picker.toDay" = "toDay"

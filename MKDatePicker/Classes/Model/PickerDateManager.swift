@@ -372,4 +372,65 @@ extension PickerDateManager {
         }
         return array
     }
+    
+    
+    /// 获取最小日期和最大日期
+    /// - Returns: 最小日期和最大日期
+    public func findMinDateAndMaxDate() -> (min: Date, max: Date) {
+        guard let min = minimumDate,
+              let max = maximumDate else {
+                
+                let year = Date().toString(format: DateFormatType.custom("yyyy"))
+                let minDate = Date(fromString: "\(year)-01-01 00:00", format: DateFormatType.custom("yyyy-MM-dd HH:mm"))
+                let maxDay = Date(fromString: "\(year)-12", format: DateFormatType.custom("yyyy-MM"))!.numberOfDaysInMonth()
+                let maxDate = Date(fromString: "\(year)-12-\(maxDay) 23:59", format: DateFormatType.custom("yyyy-MM-dd HH:mm"))
+                return (min: minDate!, max: maxDate!)
+        }
+        return (min: min, max: max)
+    }
+    
+    
+    /// 获取间隔日期
+    /// - Parameters:
+    ///   - start: 开始日期
+    ///   - end: 结束日期
+    /// - Returns: 间隔天数
+    public func findIntervalDay(start: Date, end: Date) -> Int {
+        
+        let delta = calendar.dateComponents([.day], from: start, to: end)
+        return delta.day ?? 0
+    }
+    
+    
+    /// 获取星期几
+    /// - Parameter data: 日期
+    /// - Returns: 周几
+    public func weekDay(data: Date) -> String {
+        
+        if let index = data.component(DateComponentType.weekday) {
+            let weakDay = ["picker.sunday".localized(),
+                           "picker.monday".localized(),
+                           "picker.tuesday".localized(),
+                           "picker.wednesday".localized(),
+                           "picker.thursday".localized(),
+                           "picker.friday".localized(),
+                           "picker.saturday".localized()][index-1]
+            return weakDay
+        }
+        return ""
+    }
+    
+    
+    /// 日期转换
+    /// - Parameter string: yyyy-MM-dd
+    /// - Returns: 显示的日期
+    public func dateConversion(_ date: Date) -> String {
+        
+        if date.compare(DateComparisonType.isToday) {
+            return "picker.toDay".localized()
+        } else {
+            return  date.toString(format: DateFormatType.custom("MM\("picker.month".localized())dd\("picker.day".localized())")) + " " + weekDay(data: date)
+        }
+    }
+    
 }

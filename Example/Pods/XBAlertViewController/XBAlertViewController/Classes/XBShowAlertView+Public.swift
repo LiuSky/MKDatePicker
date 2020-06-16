@@ -73,7 +73,7 @@ extension XBShowAlertView {
     ///   - contentView: 内容视图
     ///   - backgoundTapDismissEnable: 点击背景是否隐藏
     ///   - isShowMask: 是否遮照
-    ///   - alertViewEdging: 弹出视图变局
+    ///   - alertViewEdging: 弹出视图边距
     ///   - alertViewOriginY: 根据Y轴中心点设置偏移量
     ///   - delegate: 委托
     @discardableResult

@@ -14,3 +14,11 @@
 "picker.hours" = "时";
 "picker.minute" = "分";
 "picker.second" = "秒";
+"picker.monday" = "周一";
+"picker.tuesday" = "周二";
+"picker.wednesday" = "周三";
+"picker.thursday" = "周四";
+"picker.friday" = "周五";
+"picker.saturday" = "周六";
+"picker.sunday" = "周日";
+"picker.toDay" = "今日";

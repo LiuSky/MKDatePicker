@@ -1,8 +1,9 @@
 //
-//  PickerViewController+in.swift
-//  Pods-XBDatePicker_Example
+//  PickerViewController+Calculate.swift
+//  XBDatePicker
 //
-//  Created by xiaobin liu on 2020/3/27.
+//  Created by xiaobin liu on 2020/3/12.
+//  Copyright © 2020 CocoaPods. All rights reserved.
 //
 
 import UIKit
@@ -61,6 +62,9 @@ internal extension PickerViewController {
             let dateString = monthList[monthIndex].id + "-" + dayList[dayIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("MM-dd"))!
             hoursList = dateManager.findCurrentHours(date: date)
+        case .dateWeakHourMinute:
+            let date = Date(fromString: dateWeakList[weakIndex].id, format: DateFormatType.custom("yyyy-MM-dd"))!
+            hoursList = dateManager.findCurrentHours(date: date)
         default:
             let currentString = Date().toString(format: DateFormatType.custom("HH:mm"))
             hoursList = dateManager.findCurrentHours(date: Date(fromString: "\(currentString)", format: DateFormatType.custom("HH:mm"))!)
@@ -82,6 +86,9 @@ internal extension PickerViewController {
         case .time, .timeAndSecond:
             let dateString = hoursList[hoursIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("HH"))!
+            minuteList = dateManager.findCurrentMinute(date: date)
+        case .dateWeakHourMinute:
+            let date = Date(fromString: dateWeakList[weakIndex].id + " " + hoursList[hoursIndex].id, format: DateFormatType.custom("yyyy-MM-dd HH"))!
             minuteList = dateManager.findCurrentMinute(date: date)
         default:
             let currentString = Date().toString(format: DateFormatType.custom("mm:ss"))
@@ -109,6 +116,20 @@ internal extension PickerViewController {
             let dateString = minuteList[minuteIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("mm"))!
             secondList = dateManager.findCurrentSecond(date: date)
+        }
+    }
+    
+    /// 计算日期星期列表
+    func calculateDateWeakList() {
+        
+        let avg = dateManager.findMinDateAndMaxDate()
+        let interval = dateManager.findIntervalDay(start: avg.min, end: avg.max)
+        
+        dateWeakList = []
+        for item in (0...interval) {
+            let new = Date(timeInterval: Date.dayInSeconds * Double(item), since: avg.min)
+            let dateString = new.toString(format: DateFormatType.custom("yyyy-MM-dd"))
+            dateWeakList.append(PickerDateModel(id: dateString, name: dateManager.dateConversion(new)))
         }
     }
     
@@ -163,5 +184,13 @@ internal extension PickerViewController {
         
         let secondString = date.toString(format: DateFormatType.custom("ss"))
         secondIndex = secondList.firstIndex(of: PickerDateModel(id: secondString, name: "")) ?? 0
+    }
+    
+    
+    /// 计算日期周索引
+    /// - Parameter date: date
+    func calculateDateWeakIndex(_ date: Date) {
+        let dateString = date.toString(format: DateFormatType.custom("yyyy-MM-dd"))
+        weakIndex = dateWeakList.firstIndex(of: PickerDateModel(id: dateString, name: "")) ?? 0
     }
 }

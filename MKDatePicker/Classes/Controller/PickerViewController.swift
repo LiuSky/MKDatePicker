@@ -76,6 +76,9 @@ public final class PickerViewController: UIView {
     /// 秒索引
     internal var secondIndex: Int = 0
     
+    /// 周索引
+    internal var weakIndex: Int = 0
+    
     /// 年数组
     internal var yearList: [PickerDateModel] = []
     
@@ -93,6 +96,9 @@ public final class PickerViewController: UIView {
     
     /// 秒数组
     internal var secondList: [PickerDateModel] = []
+    
+    /// 年月日星期数组
+    internal var dateWeakList: [PickerDateModel] = []
     
     /// 日期管理
     internal lazy var dateManager: PickerDateManager = {
@@ -148,6 +154,8 @@ public final class PickerViewController: UIView {
                 pickerViewProtocol = TimeAndSecond()
             case .minuteAndSecond:
                 pickerViewProtocol = MinuteAndSecond()
+            case .dateWeakHourMinute:
+                pickerViewProtocol = DateWeakHourMinute()
             }
         }
     }
