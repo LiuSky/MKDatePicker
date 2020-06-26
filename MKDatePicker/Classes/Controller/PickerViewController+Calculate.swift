@@ -124,7 +124,6 @@ internal extension PickerViewController {
         
         let avg = dateManager.findMinDateAndMaxDate()
         let interval = dateManager.findIntervalDay(start: avg.min, end: avg.max)
-        
         dateWeekList = []
         for item in (0...interval) {
             let new = Date(timeInterval: Date.dayInSeconds * Double(item), since: avg.min)
@@ -132,7 +131,6 @@ internal extension PickerViewController {
             dateWeekList.append(PickerDateModel(id: dateString, name: dateManager.dateConversion(new)))
         }
     }
-    
     
     
     /// 计算年的索引

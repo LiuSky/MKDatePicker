@@ -182,8 +182,8 @@ extension ViewController: UITableViewDelegate {
             dfmatter.dateFormat = "yyyy-MM-dd HH:mm"
             headerTitle = "选择日期"
             dateFormatType = DateFormatType.custom("yyyy-MM-dd HH:mm")
-            minimumDate = dfmatter.date(from: "2020-01-10 03:10")
-            maximumDate = dfmatter.date(from: "2020-06-17 22:59")
+//            minimumDate = dfmatter.date(from: "2020-01-10 03:10")
+//            maximumDate = dfmatter.date(from: "2020-06-17 22:59")
             selectDate = Date()
         }
         

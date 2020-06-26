@@ -54,6 +54,10 @@ public class PickerView: UIPickerView {
         unitLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 1.5).isActive = true
     }
     
+    public override func numberOfRows(inComponent component: Int) -> Int {
+        return Int.max
+    }
+    
    /// UITableViewDataSource
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableViewCell = super.tableView(tableView, cellForRowAt: indexPath)
