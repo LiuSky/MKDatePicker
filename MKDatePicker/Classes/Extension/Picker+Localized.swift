@@ -14,10 +14,9 @@ import Foundation
 public extension String {
     
     func localized(value: String? = nil, table: String = "Language") -> String {
-        guard let path = Bundle.current.path(forResource: Language.current.rawValue, ofType: "lproj") else {
+        guard let path = Bundle.module.path(forResource: Language.current.rawValue, ofType: "lproj") else {
             return self
         }
-        
         return Bundle(path: path)?.localizedString(forKey: self, value: value, table: table) ?? self
     }
 }
@@ -40,9 +39,10 @@ public enum Language: String {
 /// MARK - Bundle
 private extension Bundle {
     
-    static let current: Bundle = {
+    static let module: Bundle = {
         
         let frameworkBundle = Bundle(for: PickerViewController.self)
+        
         guard let path = frameworkBundle.path(forResource: "Langs", ofType: "bundle"),
             let bundle = Bundle(path: path) else
         {
