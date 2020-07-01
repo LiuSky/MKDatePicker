@@ -33,7 +33,7 @@ public class PickerView: UIPickerView {
     }
     
     /// 灰色的线
-    public var lineColor: UIColor? = UIColor(red: 183.0/255.0, green: 183.0/255.0, blue: 183.0/255.0, alpha: 1.0)
+    public var lineColor: UIColor = UIColor(red: 183.0/255.0, green: 183.0/255.0, blue: 183.0/255.0, alpha: 1.0)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -63,7 +63,12 @@ public class PickerView: UIPickerView {
         let tableViewCell = super.tableView(tableView, cellForRowAt: indexPath)
         if tableView.superview === tableView.superview?.superview?.subviews.last {
             
-            if let temView = tableViewCell.subviews.last?.subviews.first as? UILabel,
+            var label = tableViewCell.subviews.last?.subviews.first as? UILabel
+            if #available(iOS 14.0, *) {
+                label = label == nil ? tableViewCell.subviews.first?.subviews.first as? UILabel : label
+            }
+            
+            if let temView = label,
                let temSelectedAttributes = selectedAttributes {
                 temView.attributedText = NSAttributedString(string: temView.text ?? "", attributes: temSelectedAttributes)
             }
@@ -74,28 +79,24 @@ public class PickerView: UIPickerView {
     public override func layoutSubviews() {
         super.layoutSubviews()
         
-        guard let temLineColor = lineColor else {
-            return
-        }
-        
         for item in self.subviews {
-            
+
             if #available(iOS 14.0, *) {
                 if item.frame.size.height == 42 {
                     item.backgroundColor = UIColor.clear
                     let topView = UIView()
                     topView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
-                    topView.backgroundColor = temLineColor
+                    topView.backgroundColor = lineColor
                     item.addSubview(topView)
-                    
+
                     let bottomView = UIView()
                     bottomView.frame = CGRect(x: 0, y: item.frame.size.height - 1/UIScreen.main.scale, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
-                    bottomView.backgroundColor = temLineColor
+                    bottomView.backgroundColor = lineColor
                     item.addSubview(bottomView)
                 }
             } else {
                 if item.frame.size.height < 1 {
-                    item.backgroundColor = temLineColor
+                    item.backgroundColor = lineColor
                 }
             }
         }
