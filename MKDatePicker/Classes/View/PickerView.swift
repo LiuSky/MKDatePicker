@@ -79,8 +79,24 @@ public class PickerView: UIPickerView {
         }
         
         for item in self.subviews {
-            if item.frame.size.height < 1 {
-                item.backgroundColor = temLineColor
+            
+            if #available(iOS 14.0, *) {
+                if item.frame.size.height == 42 {
+                    item.backgroundColor = UIColor.clear
+                    let topView = UIView()
+                    topView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                    topView.backgroundColor = temLineColor
+                    item.addSubview(topView)
+                    
+                    let bottomView = UIView()
+                    bottomView.frame = CGRect(x: 0, y: item.frame.size.height - 1/UIScreen.main.scale, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                    bottomView.backgroundColor = temLineColor
+                    item.addSubview(bottomView)
+                }
+            } else {
+                if item.frame.size.height < 1 {
+                    item.backgroundColor = temLineColor
+                }
             }
         }
     }
