@@ -97,7 +97,7 @@ extension ViewController: UITableViewDelegate {
             dfmatter.dateFormat = "yyyy-MM-dd"
             headerTitle = "选择日期"
             dateFormatType = DateFormatType.custom("yyyy-MM-dd")
-            minimumDate = dfmatter.date(from: "1990-07-21")
+            minimumDate = dfmatter.date(from: "1950-07-21")
             maximumDate = dfmatter.date(from: "2000-08-21")
             selectDate = dfmatter.date(from: "1990-08-21")
         case .dateHour:

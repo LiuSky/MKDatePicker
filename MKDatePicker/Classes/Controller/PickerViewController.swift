@@ -217,6 +217,14 @@ public final class PickerViewController: UIView {
             configDataSource()
         }
     }
+    
+    public override func layoutSubviews() {
+        super.layoutSubviews()
+        let path = UIBezierPath(roundedRect: bounds, byRoundingCorners: [.topLeft, .topRight], cornerRadii: CGSize(width: 12, height: 12))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        layer.mask = mask
+    }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

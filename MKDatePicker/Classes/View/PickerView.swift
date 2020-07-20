@@ -54,18 +54,14 @@ public class PickerView: UIPickerView {
         unitLabel.centerYAnchor.constraint(equalTo: centerYAnchor, constant: 1.5).isActive = true
     }
     
-    public override func numberOfRows(inComponent component: Int) -> Int {
-        return Int.max
-    }
-    
-   /// UITableViewDataSource
+   /// MARK -  UITableViewDataSource
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tableViewCell = super.tableView(tableView, cellForRowAt: indexPath)
         if tableView.superview === tableView.superview?.superview?.subviews.last {
             
             var label = tableViewCell.subviews.last?.subviews.first as? UILabel
-            if #available(iOS 14.0, *) {
-                label = label == nil ? tableViewCell.subviews.first?.subviews.first as? UILabel : label
+            if #available(iOS 14.0, *), label == nil {
+                label = tableViewCell.subviews.first?.subviews.first as? UILabel
             }
             
             if let temView = label,
@@ -76,25 +72,26 @@ public class PickerView: UIPickerView {
         return tableViewCell
     }
     
+    
     public override func layoutSubviews() {
         super.layoutSubviews()
         
-        for item in self.subviews {
+        if #available(iOS 14.0, *) {
+            if let item = self.subviews.last {
+                item.backgroundColor = UIColor.clear
+                let topView = UIView()
+                topView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                topView.backgroundColor = lineColor
+                item.addSubview(topView)
 
-            if #available(iOS 14.0, *) {
-                if item.frame.size.height == 42 {
-                    item.backgroundColor = UIColor.clear
-                    let topView = UIView()
-                    topView.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
-                    topView.backgroundColor = lineColor
-                    item.addSubview(topView)
-
-                    let bottomView = UIView()
-                    bottomView.frame = CGRect(x: 0, y: item.frame.size.height - 1/UIScreen.main.scale, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
-                    bottomView.backgroundColor = lineColor
-                    item.addSubview(bottomView)
-                }
-            } else {
+                let bottomView = UIView()
+                bottomView.frame = CGRect(x: 0, y: item.frame.size.height - 1/UIScreen.main.scale, width: UIScreen.main.bounds.width, height: 1/UIScreen.main.scale)
+                bottomView.backgroundColor = lineColor
+                item.addSubview(bottomView)
+            }
+            
+        } else {
+            for item in self.subviews {
                 if item.frame.size.height < 1 {
                     item.backgroundColor = lineColor
                 }
