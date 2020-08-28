@@ -195,6 +195,7 @@ extension ViewController: UITableViewDelegate {
         contentView.maximumDate = maximumDate
         contentView.minimumDate = minimumDate
         contentView.selectedAttributes = selectedAttributes
+        contentView.lineColor = UIColor.red
         contentView.confirmCallBack.delegate(on: self, block: { (weakSelf, arg1) in
             let (_, result) = arg1
             debugPrint(result.toString(format: dateFormatType))

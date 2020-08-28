@@ -1,5 +1,5 @@
 PODS:
-  - MKDatePicker (1.0.0):
+  - MKDatePicker (1.2.1):
     - XBAlertViewController (~> 1.0.1)
   - XBAlertViewController (1.0.1)
 
@@ -7,7 +7,7 @@ DEPENDENCIES:
   - MKDatePicker (from `../`)
 
 SPEC REPOS:
-  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+  trunk:
     - XBAlertViewController
 
 EXTERNAL SOURCES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MKDatePicker: a970f707327e080e0b73984edf2df098a63e1f0a
+  MKDatePicker: a5550da8d920c24ddaa7baf3e109f4d39b2df3a9
   XBAlertViewController: f3cf6bdbaffed1322471f752104fa86001f05c4c
 
-PODFILE CHECKSUM: 1b0f929d03c4b920ed3c7b4f70cce9b39e89f3e8
+PODFILE CHECKSUM: a56aa90a8d54e5ec22828a59a64bbd1e2a0e6ff9
 
 COCOAPODS: 1.9.1

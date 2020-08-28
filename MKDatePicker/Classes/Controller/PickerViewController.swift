@@ -58,6 +58,13 @@ public final class PickerViewController: UIView {
         }
     }
     
+    /// 灰色的线
+    public var lineColor: UIColor = UIColor(red: 183.0/255.0, green: 183.0/255.0, blue: 183.0/255.0, alpha: 1.0) {
+        didSet {
+            pickerView.lineColor = lineColor
+        }
+    }
+    
     /// 年索引
     internal var yearIndex: Int = 0
     

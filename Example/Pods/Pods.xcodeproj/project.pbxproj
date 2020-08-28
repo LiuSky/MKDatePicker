@@ -7,56 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0401CEAC3859BF07FB054E8795C9FCFD /* PickerViewController+MinuteAndSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F8FDFA1077721E86A1450040D6FBF /* PickerViewController+MinuteAndSecond.swift */; };
-		140B66B85A8C60FD05B7B2A449C22DAF /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA694ACFFC7F0A2453DCA29560E4B6 /* PickerView.swift */; };
-		190DFE4424365AE19D3150B8922F0062 /* MKDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E07436339658E8CE2A500195D27D4CD /* MKDatePicker-dummy.m */; };
-		2E418EB889DEA16FDD6E51FEF957CBCA /* PickerDateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECAACE0F1283A17C29FF899BD9B987A /* PickerDateType.swift */; };
-		30EE42A9886AE3FFE3D6287FDAFF0311 /* XBAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 002AB103C2C12306F8408A9C9CC7620D /* XBAlertViewController-dummy.m */; };
-		35CAF8E3D48F10505AE59D37A4B1B91C /* Picker+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFFE3BE64A44BD8D5E8CAD4C1698A9A /* Picker+Date.swift */; };
-		3CFF92EB8052E363180F59F9F4ED61A7 /* XBAlertViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4894BFD452E823D4DFA57A3F3A1778 /* XBAlertViewController.framework */; };
-		41B1DBE7805331A4896E5DB704D08808 /* PickerViewController+MonthDayHourMinuteSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD63527260F923EB3DAB6654665CE9F2 /* PickerViewController+MonthDayHourMinuteSecond.swift */; };
-		47A4CD53BC9FA739B94BB3BFD2DE0A71 /* XBShowAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA55151FF8813C6CC419AE9613D418D /* XBShowAlertView.swift */; };
-		51943DFE8C6A3EA00DC44F98E3CDB5B9 /* PickerViewController+TimeAndSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F954B9F723E0801C9092DECE5567E11 /* PickerViewController+TimeAndSecond.swift */; };
+		0C7CEBFA8A726D3D6E273192E9BBA90F /* PickerViewController+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00E696F296D9377233C2FC3D70D00E3 /* PickerViewController+Year.swift */; };
+		0D2A11BAFE298F298082D8FFF19F27F8 /* PickerViewController+MonthDayHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D665E22A7C16753DD5DD9B5B22EAC63 /* PickerViewController+MonthDayHour.swift */; };
+		1607E146A23F6B818AF9DE193203B60E /* PickerViewController+DateHourMinuteSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B2EB079673F763AA3EAE82F3FD0828 /* PickerViewController+DateHourMinuteSecond.swift */; };
+		1DA30F4749E7CE492EA3C42CF0C52E5B /* PickerViewController+DateHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD81755D5C2CDB5D86AFD65D265AFC6B /* PickerViewController+DateHour.swift */; };
+		23B275222C0289EA9F87EEDAAAE79D85 /* Langs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 633E58B81B0FB64ED0E8C8ACA4B3540E /* Langs.bundle */; };
+		2CB14556BA71CA06CF48C3A41CC0E6C9 /* PickerViewController+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4EAAE8C4EC61645C12BB23EB24E541 /* PickerViewController+Date.swift */; };
+		36E3B5F415756D10191422159BA28E88 /* XBAlertViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4894BFD452E823D4DFA57A3F3A1778 /* XBAlertViewController.framework */; };
+		3C29D2EF77529F7CAFC84D7D202A64D0 /* XBAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E77EA27EBCC9185B4BE08831986A04 /* XBAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CD3D9C0A1ECCDFBE70B1FC9997D59A1 /* PickerViewController+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07E49D3897CB8278C4C20F9DA0A77B1 /* PickerViewController+Time.swift */; };
+		4133A19F3DB3A3F922C4BBEDA3347DD6 /* PickerViewController+MonthDayHourMinuteSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2770219DF4A5BE6C1A8A1EA5B2934B /* PickerViewController+MonthDayHourMinuteSecond.swift */; };
+		5058FA447C30C11B108479337FA54485 /* Picker+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90CBA7E8FB951D6CD4AB06AAD3B6DE03 /* Picker+Date.swift */; };
+		5755345F93264A77F20AA6D360B6E31E /* PickerViewController+MinuteAndSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B2C531C35CB2964B6EAB2C329938BD /* PickerViewController+MinuteAndSecond.swift */; };
+		618DE9C7A306A8EF45BDF8B2B1A77DFE /* XBAlertAnimateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D427E62317EE8CE87A06EC4599AA6E /* XBAlertAnimateType.swift */; };
 		64810DD9F80CE5DAF51A66151E588422 /* Pods-MKDatePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B53B3DB7B7C42FBBF173988EB7B4C7 /* Pods-MKDatePicker_Example-dummy.m */; };
-		6E13CD1F4F8E68D6CFFEB56D6EDB69B2 /* Picker+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7140CA12DA8300E25D6604FE73EE622 /* Picker+Localized.swift */; };
-		734C9BDBEFCA7B16C0C4E97CBA6C9259 /* PickerViewController+DateHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EE50C87C49C5279B49F3E75612FF3E /* PickerViewController+DateHourMinute.swift */; };
-		73747447D9CE7CE15C23666F6A1D0CCD /* PickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED5E63F89E3F764A05514FE299C5F91 /* PickerHeaderView.swift */; };
-		7730818015A39E59E402D98717ADCF96 /* PickerViewController+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAC8E7C6DE9A77F601320CB1BB4880 /* PickerViewController+Public.swift */; };
-		7878456E5BF1502EF3B1D91397081AAE /* PickerDateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A7D4D0FF4AD9AA68C52D7A0EFF7963 /* PickerDateManager.swift */; };
-		79A61372C19EBB33374EC58D5A62E646 /* PickerViewController+MonthDayHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D9FAFBC917CCAC031B9D51E2910511 /* PickerViewController+MonthDayHourMinute.swift */; };
-		79B97308C3E0570CD711AD7C89FB13F7 /* PickerViewController+Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B562345361458AF292424FBC4BB118 /* PickerViewController+Time.swift */; };
-		7B73C239F23D034CED3CAAA9CAEECBB8 /* XBAlertAnimateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D427E62317EE8CE87A06EC4599AA6E /* XBAlertAnimateType.swift */; };
-		80833C53249764B200658BF5 /* PickerViewController+DateWeekHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80833C52249764B200658BF5 /* PickerViewController+DateWeekHourMinute.swift */; };
-		80968F0F24347575001DE871 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80968F0E24347575001DE871 /* Delegate.swift */; };
-		8578D1E648D00BA33215BD4A83B5A1BA /* XBShowAlertView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33738967FEE76945610376A28C365401 /* XBShowAlertView+Public.swift */; };
-		85914A428D5EA1320A3D67F07F91D87E /* Langs.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F51A63501069400A3EECC964A4260AEC /* Langs.bundle */; };
-		89597792516B10FBB883310F72BCAD6B /* PickerViewController+MonthDayHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E1ED6505C5AA7EB60DC81D50F0794A /* PickerViewController+MonthDayHour.swift */; };
-		8EF8A40ECBCFEDEA84EC1D9307C7EE5D /* PickerViewController+MonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA9E5AA177DB9AD947F07F0E00E0B2FE /* PickerViewController+MonthDay.swift */; };
-		9310D9A88B1991E24EBCAE30BC2E5913 /* XBShowAlertView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E648C88545EC2B39CF60F1F470C045 /* XBShowAlertView+Layout.swift */; };
-		93FD59729EE3E7C63623D8635C4596F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */; };
-		9B5C78A4E78C5A0FED69D0E536EEF6D1 /* PickerViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AB8C323485AD57E6A3AB9FA8A87258 /* PickerViewControllerDataSource.swift */; };
-		A2ADA97525A86C2EBEC6746087022EB8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */; };
-		A6AC826DD7FB6B27D507DF5789F16829 /* PickerDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172CD36091831EE5A0CBFD1D70D729A /* PickerDateModel.swift */; };
+		67B886A6E12639E0D3DB0E4163C7B6FD /* PickerViewController+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D509A90547BA888372268098683C6B /* PickerViewController+Calculate.swift */; };
+		727F073C84E6AEC549EC1A1C9642DC1B /* XBShowAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA55151FF8813C6CC419AE9613D418D /* XBShowAlertView.swift */; };
+		7292CEAB47F450F7CC06A61A373ACCF7 /* MKDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 859BCC79E45FBA3893B3B55F6E888776 /* MKDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E8113804AF12926FA0A7B9EFB95BC78 /* PickerViewController+DateWeekHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53485837FB73E12B239238146DE57690 /* PickerViewController+DateWeekHourMinute.swift */; };
+		85E1DC7E30D956DF4CBA68966D99F3F5 /* XBAlertViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 002AB103C2C12306F8408A9C9CC7620D /* XBAlertViewController-dummy.m */; };
+		881686A32A19AB0AD6B2FA68F884FC3B /* UIPickerView+DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E69BD08E04DF297640D1AC7AED336E5 /* UIPickerView+DataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BA11CC9DDBB77A404361CE4F8D6333F /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 606E6FCA37E8EDBD804C6A05D2434487 /* PickerViewController.swift */; };
+		9537E890BB95C1A473E33F21A1F3CA4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */; };
+		9C2802AD1F8422C863F32B3434E5ECBF /* PickerDateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A2641B9529883E0F2701E154BDABA7 /* PickerDateManager.swift */; };
+		9E7B875CB3D0574FBEA4DFFF8CFBF7B6 /* XBShowAlertView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165F19C1A4F75DA54439A94A262886 /* XBShowAlertView+Animation.swift */; };
+		A078192238AFCA10429D005C0FC08E1C /* PickerViewController+YearAndMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5362A2AA10F5DEBE45B0916C39C2FB1 /* PickerViewController+YearAndMonth.swift */; };
+		A447F6CF1BA193879E6B4FCC121AEBDE /* XBShowAlertView+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33738967FEE76945610376A28C365401 /* XBShowAlertView+Public.swift */; };
+		A7EBFBF4DA94D27C7FC055866E50A53E /* MKDatePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D59B72F394DE94EA110CA66ACE8D3F4 /* MKDatePicker-dummy.m */; };
+		A9E02F54E058117D3F15C078A2CDEE1A /* PickerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DE54515C0B34725549DF6579679A49 /* PickerHeaderView.swift */; };
+		AB17A2596A1567718179BBAC269CCCDD /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD963B70BE7D3AAAA02E14DFCE344AD5 /* PickerView.swift */; };
 		B007DDDEE9ADD2F2C7E22BA7147FE1D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */; };
 		B109B251BAD1566DB994E86C1DDD5536 /* Pods-MKDatePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 319F21AD19C0ADF0E0450EC82582F4B4 /* Pods-MKDatePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B110CEEA923E0F51373332087288F286 /* PickerViewController+Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DBECCB4603F0D1D1767C00E8DEB4CE /* PickerViewController+Year.swift */; };
 		B28370E49A1D0075E229AE2398D0EFCC /* Pods-MKDatePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC085359D0FB5FDE6770FD1BFDDD3CC1 /* Pods-MKDatePicker_Tests-dummy.m */; };
-		BAC6F7EC142B81B3ADB136E0674E49CE /* PickerViewController+Calculate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441B3568E391E6CE2CABE90D67EEB1C6 /* PickerViewController+Calculate.swift */; };
-		C043FB74C6F8F09EC666D8F2D3EDA4C3 /* UIPickerView+DataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 78FABFCBA4373C3F2520EE7804EFCEA9 /* UIPickerView+DataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C3D77EC0946431F5CE7E699D9B99B7C7 /* PickerViewController+DateHourMinuteSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086A9F83A7B18FAFBFFE91FCD86D857A /* PickerViewController+DateHourMinuteSecond.swift */; };
+		B62189AE409861574981B9D33C3A61A3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */; };
+		B903FA765992E2FFBCE3682DCC32A119 /* Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D52F963B835889DADC3AE24100085 /* Delegate.swift */; };
+		BBBF1D274D80B602A5AD7E7C84C2101E /* Picker+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA5F30593D0AF217C1F5401F48FB471 /* Picker+Localized.swift */; };
+		BC0D9AD6EFE819F8979E7F67B452B05C /* PickerDateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E99C15936DFF60295CFCFC163FBD12A /* PickerDateModel.swift */; };
+		C85BBC531C89B6A840EC4A53B7AEFAF4 /* XBShowAlertView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E648C88545EC2B39CF60F1F470C045 /* XBShowAlertView+Layout.swift */; };
 		CA2E5CEEACDB8C3BA98236CF39866DEC /* Pods-MKDatePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7E04CF8FF0C9453D74F5F0697495CB /* Pods-MKDatePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC90366DF96FA85BBF6C98C02AEA14D5 /* PickerViewController+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72AE9E00ABB4A2721CD45FF084A6E88 /* PickerViewController+Date.swift */; };
+		CAA861FE29C23D647BF7B09C4C9D3D65 /* PickerViewController+Public.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E3663D0A7989662D5E130F098A5BC3 /* PickerViewController+Public.swift */; };
 		CE3233E1681B16E808844A73BB5E22C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */; };
-		E5AA06B2659173F0B0D97F02025B8F1D /* PickerViewController+DateHour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18577A23AB8BC1EF4BBFC39D1A1C24D3 /* PickerViewController+DateHour.swift */; };
-		E5D74E0CF3C36F0598B2E989DBEB5739 /* PickerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D1AFE41A584E96D7A4EFBCA0C0988 /* PickerViewControllerDelegate.swift */; };
-		E7E6FDAFF2AD927139BB84924E523FC0 /* XBAlertViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 03E77EA27EBCC9185B4BE08831986A04 /* XBAlertViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E99330801E0B58CB8B2D58241F24F0A3 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEDDE8D95CAAC4F451D2F3E0D71E7BA /* PickerViewController.swift */; };
-		EAFCE4A40600FC825D5C142F9E8BF2A7 /* XBShowAlertView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165F19C1A4F75DA54439A94A262886 /* XBShowAlertView+Animation.swift */; };
-		F7196AB122891D1B6445E0FFB89F6A64 /* PickerViewController+YearAndMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42A92BE69AE600E54FA712C2A050811F /* PickerViewController+YearAndMonth.swift */; };
-		FA18BB51AB45EC936336C4126F6FC81E /* MKDatePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B69D1F78D24F6CB7D4BFF22F10DE10 /* MKDatePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5DD9E89E278829F1CAE67BE5AF6AC27 /* PickerViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9000D512AB3A12E01EF79F7D610F20B1 /* PickerViewControllerDataSource.swift */; };
+		E02B36388FA0943E4A19B150480A859D /* PickerViewController+MonthDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06967437594DBBAE1292708F2A2F32BE /* PickerViewController+MonthDay.swift */; };
+		E2765CE28249ADD340096B8C57A2F9DF /* PickerViewController+DateHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADA6C50A3B24F7514192CA3A6377E3 /* PickerViewController+DateHourMinute.swift */; };
+		E3B3111793EBC48F1BA207D869936B6F /* PickerViewController+TimeAndSecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CC4D26B28BA20E1F285F66C2ACA01A /* PickerViewController+TimeAndSecond.swift */; };
+		F5F45BFBCC2B46CF8891E024E7F80247 /* PickerViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E00F0ABB9D5C5A291815C7B615FBFF9 /* PickerViewControllerDelegate.swift */; };
+		F9355114D3E449DFA69BE0BDB37AD8C3 /* PickerViewController+MonthDayHourMinute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980652D9EE37188B4D25674BCD170B29 /* PickerViewController+MonthDayHourMinute.swift */; };
+		F9C1A5FA3CD4027577D89A6B856998CB /* PickerDateType.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF2E27EC881F5C421A924CBD3DA89A /* PickerDateType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3E45290DBDA9A67CF19C444EAF0AAEFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DA25DDE41766A959DC2A863C7821F3D9;
+			remoteInfo = XBAlertViewController;
+		};
 		4F746301BE308961239861F6F5D6AA2D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -71,13 +78,6 @@
 			remoteGlobalIDString = 28B32E9D5E5DA0947E29BAE3044FE624;
 			remoteInfo = MKDatePicker;
 		};
-		C7998AFE2894532B3322F019693E39B2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA25DDE41766A959DC2A863C7821F3D9;
-			remoteInfo = XBAlertViewController;
-		};
 		E923C6973428BF95078E0DD24AF7537D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -89,79 +89,79 @@
 
 /* Begin PBXFileReference section */
 		002AB103C2C12306F8408A9C9CC7620D /* XBAlertViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "XBAlertViewController-dummy.m"; sourceTree = "<group>"; };
+		033954C46B9AD1C0FDA08DCCBE298B2C /* MKDatePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKDatePicker.debug.xcconfig; sourceTree = "<group>"; };
 		03E77EA27EBCC9185B4BE08831986A04 /* XBAlertViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XBAlertViewController-umbrella.h"; sourceTree = "<group>"; };
-		05B69D1F78D24F6CB7D4BFF22F10DE10 /* MKDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		06967437594DBBAE1292708F2A2F32BE /* PickerViewController+MonthDay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDay.swift"; sourceTree = "<group>"; };
 		06E4FA38739EE5E489157B3ECEF38C36 /* XBAlertViewController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XBAlertViewController.release.xcconfig; sourceTree = "<group>"; };
-		086A9F83A7B18FAFBFFE91FCD86D857A /* PickerViewController+DateHourMinuteSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateHourMinuteSecond.swift"; sourceTree = "<group>"; };
-		0ED5E63F89E3F764A05514FE299C5F91 /* PickerHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerHeaderView.swift; sourceTree = "<group>"; };
-		1172CD36091831EE5A0CBFD1D70D729A /* PickerDateModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerDateModel.swift; sourceTree = "<group>"; };
+		0CA5F30593D0AF217C1F5401F48FB471 /* Picker+Localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Picker+Localized.swift"; sourceTree = "<group>"; };
 		123D296E5C8E08FBE752C600424AC4AD /* Pods-MKDatePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKDatePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		18165F19C1A4F75DA54439A94A262886 /* XBShowAlertView+Animation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XBShowAlertView+Animation.swift"; path = "XBAlertViewController/Classes/XBShowAlertView+Animation.swift"; sourceTree = "<group>"; };
-		18577A23AB8BC1EF4BBFC39D1A1C24D3 /* PickerViewController+DateHour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateHour.swift"; sourceTree = "<group>"; };
-		1D5F8FDFA1077721E86A1450040D6FBF /* PickerViewController+MinuteAndSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MinuteAndSecond.swift"; sourceTree = "<group>"; };
-		1ECAACE0F1283A17C29FF899BD9B987A /* PickerDateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerDateType.swift; sourceTree = "<group>"; };
-		24BAC8E7C6DE9A77F601320CB1BB4880 /* PickerViewController+Public.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Public.swift"; sourceTree = "<group>"; };
-		27B562345361458AF292424FBC4BB118 /* PickerViewController+Time.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Time.swift"; sourceTree = "<group>"; };
+		25E3663D0A7989662D5E130F098A5BC3 /* PickerViewController+Public.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Public.swift"; sourceTree = "<group>"; };
+		260772CBC4430546854489236F4C1AA5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		2B6D52F963B835889DADC3AE24100085 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
 		2C75F07A674DBDCB370CCD0AD8D7F8CB /* Pods-MKDatePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKDatePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		2E07436339658E8CE2A500195D27D4CD /* MKDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKDatePicker-dummy.m"; sourceTree = "<group>"; };
+		30DE54515C0B34725549DF6579679A49 /* PickerHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerHeaderView.swift; sourceTree = "<group>"; };
 		319F21AD19C0ADF0E0450EC82582F4B4 /* Pods-MKDatePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKDatePicker_Example-umbrella.h"; sourceTree = "<group>"; };
-		328381B74FD3EB4C32828FA01B4B16A2 /* MKDatePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKDatePicker.release.xcconfig; sourceTree = "<group>"; };
 		33738967FEE76945610376A28C365401 /* XBShowAlertView+Public.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XBShowAlertView+Public.swift"; path = "XBAlertViewController/Classes/XBShowAlertView+Public.swift"; sourceTree = "<group>"; };
 		34D4D2F096D7D65329B52460D1BF67D4 /* Pods-MKDatePicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKDatePicker_Tests.modulemap"; sourceTree = "<group>"; };
 		376125FBAC9DC6EA45C0BD5578CDE23E /* Pods-MKDatePicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKDatePicker_Example-Info.plist"; sourceTree = "<group>"; };
 		3D9452CD55223A83B54ED0C13881449B /* XBAlertViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "XBAlertViewController-prefix.pch"; sourceTree = "<group>"; };
 		3E7E04CF8FF0C9453D74F5F0697495CB /* Pods-MKDatePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MKDatePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
-		42A92BE69AE600E54FA712C2A050811F /* PickerViewController+YearAndMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+YearAndMonth.swift"; sourceTree = "<group>"; };
-		441B3568E391E6CE2CABE90D67EEB1C6 /* PickerViewController+Calculate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Calculate.swift"; sourceTree = "<group>"; };
+		412760B6EE46F07EA2556E3D024F89C5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		45B53B3DB7B7C42FBBF173988EB7B4C7 /* Pods-MKDatePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKDatePicker_Example-dummy.m"; sourceTree = "<group>"; };
 		4BFE0D134F419E1EEBC229C990D6B48C /* XBAlertViewController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = XBAlertViewController.debug.xcconfig; sourceTree = "<group>"; };
 		4FBF13C0B45E2FABB471422C80EFCB27 /* Pods-MKDatePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKDatePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5BEDDE8D95CAAC4F451D2F3E0D71E7BA /* PickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
-		5DAB7AA64CE22DEBE74773E1C4AC4B2D /* Pods_MKDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKDatePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F954B9F723E0801C9092DECE5567E11 /* PickerViewController+TimeAndSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+TimeAndSecond.swift"; sourceTree = "<group>"; };
-		62EE50C87C49C5279B49F3E75612FF3E /* PickerViewController+DateHourMinute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateHourMinute.swift"; sourceTree = "<group>"; };
-		6DB9A83DB5AB03107C2A672C99E2A4EE /* Pods_MKDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKDatePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		53485837FB73E12B239238146DE57690 /* PickerViewController+DateWeekHourMinute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateWeekHourMinute.swift"; sourceTree = "<group>"; };
+		55E5F85B33E476F6E4DEB7A2AA589A05 /* MKDatePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKDatePicker-Info.plist"; sourceTree = "<group>"; };
+		592F5B157C24A02DE55D0E87C0735D25 /* MKDatePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKDatePicker.release.xcconfig; sourceTree = "<group>"; };
+		5DAB7AA64CE22DEBE74773E1C4AC4B2D /* Pods_MKDatePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKDatePicker_Tests.framework; path = "Pods-MKDatePicker_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		606E6FCA37E8EDBD804C6A05D2434487 /* PickerViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		633E58B81B0FB64ED0E8C8ACA4B3540E /* Langs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Langs.bundle; path = MKDatePicker/Assets/Langs.bundle; sourceTree = "<group>"; };
+		6D665E22A7C16753DD5DD9B5B22EAC63 /* PickerViewController+MonthDayHour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDayHour.swift"; sourceTree = "<group>"; };
+		6DB9A83DB5AB03107C2A672C99E2A4EE /* Pods_MKDatePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MKDatePicker_Example.framework; path = "Pods-MKDatePicker_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E00F0ABB9D5C5A291815C7B615FBFF9 /* PickerViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewControllerDelegate.swift; sourceTree = "<group>"; };
+		6E69BD08E04DF297640D1AC7AED336E5 /* UIPickerView+DataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+DataSource.h"; sourceTree = "<group>"; };
 		6EA0D2FB52DA4375A33F2986147E14B4 /* Pods-MKDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
-		75AB8C323485AD57E6A3AB9FA8A87258 /* PickerViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewControllerDataSource.swift; sourceTree = "<group>"; };
 		75D427E62317EE8CE87A06EC4599AA6E /* XBAlertAnimateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XBAlertAnimateType.swift; path = XBAlertViewController/Classes/XBAlertAnimateType.swift; sourceTree = "<group>"; };
-		76D9FAFBC917CCAC031B9D51E2910511 /* PickerViewController+MonthDayHourMinute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDayHourMinute.swift"; sourceTree = "<group>"; };
 		76E25A88AE3833DF78843709AEB6F5B1 /* Pods-MKDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		78FABFCBA4373C3F2520EE7804EFCEA9 /* UIPickerView+DataSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIPickerView+DataSource.h"; sourceTree = "<group>"; };
 		7C71354A89D892D94D081DFE1BC2B7F3 /* Pods-MKDatePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MKDatePicker_Example.modulemap"; sourceTree = "<group>"; };
-		80833C52249764B200658BF5 /* PickerViewController+DateWeekHourMinute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateWeekHourMinute.swift"; sourceTree = "<group>"; };
-		80968F0E24347575001DE871 /* Delegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegate.swift; sourceTree = "<group>"; };
+		7E99C15936DFF60295CFCFC163FBD12A /* PickerDateModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerDateModel.swift; sourceTree = "<group>"; };
 		8117ABB1EBCDDF611B9F91F001BBFA1C /* XBAlertViewController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "XBAlertViewController-Info.plist"; sourceTree = "<group>"; };
-		83A7D4D0FF4AD9AA68C52D7A0EFF7963 /* PickerDateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerDateManager.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		84B2EB079673F763AA3EAE82F3FD0828 /* PickerViewController+DateHourMinuteSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateHourMinuteSecond.swift"; sourceTree = "<group>"; };
+		859BCC79E45FBA3893B3B55F6E888776 /* MKDatePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDatePicker-umbrella.h"; sourceTree = "<group>"; };
+		8D59B72F394DE94EA110CA66ACE8D3F4 /* MKDatePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MKDatePicker-dummy.m"; sourceTree = "<group>"; };
+		9000D512AB3A12E01EF79F7D610F20B1 /* PickerViewControllerDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewControllerDataSource.swift; sourceTree = "<group>"; };
+		90CBA7E8FB951D6CD4AB06AAD3B6DE03 /* Picker+Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Picker+Date.swift"; sourceTree = "<group>"; };
+		980652D9EE37188B4D25674BCD170B29 /* PickerViewController+MonthDayHourMinute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDayHourMinute.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DDDFD0DFCB62EFE524D423B2A494EE0 /* Pods-MKDatePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MKDatePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A0DBECCB4603F0D1D1767C00E8DEB4CE /* PickerViewController+Year.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Year.swift"; sourceTree = "<group>"; };
+		9F2770219DF4A5BE6C1A8A1EA5B2934B /* PickerViewController+MonthDayHourMinuteSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDayHourMinuteSecond.swift"; sourceTree = "<group>"; };
+		A0A2641B9529883E0F2701E154BDABA7 /* PickerDateManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerDateManager.swift; sourceTree = "<group>"; };
 		A3940106865194A06485204885B026B0 /* Pods-MKDatePicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MKDatePicker_Tests-Info.plist"; sourceTree = "<group>"; };
-		A45E1C44FA1E14FAE54C6191679A02E8 /* MKDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MKDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7EA1CEC42D387962D912A84FD8F0171 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A45E1C44FA1E14FAE54C6191679A02E8 /* MKDatePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MKDatePicker.framework; path = MKDatePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		AA9E5AA177DB9AD947F07F0E00E0B2FE /* PickerViewController+MonthDay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDay.swift"; sourceTree = "<group>"; };
-		AB097847756C6EFC379817B02F7C348C /* XBAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XBAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AACF2E27EC881F5C421A924CBD3DA89A /* PickerDateType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerDateType.swift; sourceTree = "<group>"; };
+		AB097847756C6EFC379817B02F7C348C /* XBAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = XBAlertViewController.framework; path = XBAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC085359D0FB5FDE6770FD1BFDDD3CC1 /* Pods-MKDatePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MKDatePicker_Tests-dummy.m"; sourceTree = "<group>"; };
-		AC0D1AFE41A584E96D7A4EFBCA0C0988 /* PickerViewControllerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerViewControllerDelegate.swift; sourceTree = "<group>"; };
-		ADA74799C91ED6C8FC2882627B6EB4DE /* MKDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDatePicker-prefix.pch"; sourceTree = "<group>"; };
-		AE2B92AFF408264E70BC070B8C63FA9A /* MKDatePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MKDatePicker.debug.xcconfig; sourceTree = "<group>"; };
-		BD63527260F923EB3DAB6654665CE9F2 /* PickerViewController+MonthDayHourMinuteSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDayHourMinuteSecond.swift"; sourceTree = "<group>"; };
-		BFD7149519935D690830BA0F0341F084 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		C3790EA415F0FC747E1ABDD991A11490 /* MKDatePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MKDatePicker-Info.plist"; sourceTree = "<group>"; };
-		C7140CA12DA8300E25D6604FE73EE622 /* Picker+Localized.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Picker+Localized.swift"; sourceTree = "<group>"; };
+		AD81755D5C2CDB5D86AFD65D265AFC6B /* PickerViewController+DateHour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateHour.swift"; sourceTree = "<group>"; };
+		ADADA6C50A3B24F7514192CA3A6377E3 /* PickerViewController+DateHourMinute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+DateHourMinute.swift"; sourceTree = "<group>"; };
+		C2CC4D26B28BA20E1F285F66C2ACA01A /* PickerViewController+TimeAndSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+TimeAndSecond.swift"; sourceTree = "<group>"; };
+		C55F6D915B52C7AA3C4E6FA2D576DBBF /* MKDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKDatePicker.modulemap; sourceTree = "<group>"; };
+		C5D509A90547BA888372268098683C6B /* PickerViewController+Calculate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Calculate.swift"; sourceTree = "<group>"; };
 		C9B2FD48486BF8C329F83F38A2931416 /* XBAlertViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = XBAlertViewController.modulemap; sourceTree = "<group>"; };
 		CAA55151FF8813C6CC419AE9613D418D /* XBShowAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XBShowAlertView.swift; path = XBAlertViewController/Classes/XBShowAlertView.swift; sourceTree = "<group>"; };
 		CB89349E160013A788730AFCDEDF7B02 /* Pods-MKDatePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDatePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D1AA694ACFFC7F0A2453DCA29560E4B6 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
-		D72AE9E00ABB4A2721CD45FF084A6E88 /* PickerViewController+Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Date.swift"; sourceTree = "<group>"; };
-		D8D144887871242741588A91E5C774AF /* MKDatePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = MKDatePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DC3D1ECAD6BB61D788E28E3330D7D240 /* MKDatePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MKDatePicker.modulemap; sourceTree = "<group>"; };
+		D00E696F296D9377233C2FC3D70D00E3 /* PickerViewController+Year.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Year.swift"; sourceTree = "<group>"; };
+		D9683F76DA5EFBEA5EADB009E9F9558F /* MKDatePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MKDatePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DD963B70BE7D3AAAA02E14DFCE344AD5 /* PickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		DF9F0718E97CCE28C816DCAC381B2DA3 /* Pods-MKDatePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MKDatePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E07E49D3897CB8278C4C20F9DA0A77B1 /* PickerViewController+Time.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Time.swift"; sourceTree = "<group>"; };
+		E8B2C531C35CB2964B6EAB2C329938BD /* PickerViewController+MinuteAndSecond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MinuteAndSecond.swift"; sourceTree = "<group>"; };
+		E925BD37AEB1A52F64462FAB9BCE0083 /* MKDatePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MKDatePicker-prefix.pch"; sourceTree = "<group>"; };
 		F4E648C88545EC2B39CF60F1F470C045 /* XBShowAlertView+Layout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "XBShowAlertView+Layout.swift"; path = "XBAlertViewController/Classes/XBShowAlertView+Layout.swift"; sourceTree = "<group>"; };
-		F51A63501069400A3EECC964A4260AEC /* Langs.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = Langs.bundle; path = MKDatePicker/Assets/Langs.bundle; sourceTree = "<group>"; };
-		F5E1ED6505C5AA7EB60DC81D50F0794A /* PickerViewController+MonthDayHour.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+MonthDayHour.swift"; sourceTree = "<group>"; };
+		F5362A2AA10F5DEBE45B0916C39C2FB1 /* PickerViewController+YearAndMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+YearAndMonth.swift"; sourceTree = "<group>"; };
 		FA4894BFD452E823D4DFA57A3F3A1778 /* XBAlertViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XBAlertViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBFFE3BE64A44BD8D5E8CAD4C1698A9A /* Picker+Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Picker+Date.swift"; sourceTree = "<group>"; };
+		FC4EAAE8C4EC61645C12BB23EB24E541 /* PickerViewController+Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "PickerViewController+Date.swift"; sourceTree = "<group>"; };
 		FEE758F3B1B3C2999D0DCF39F4B57F51 /* Pods-MKDatePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MKDatePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,23 +174,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32F816C7F28C0C9AAAED2FB0B03406D1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A2ADA97525A86C2EBEC6746087022EB8 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		40B5B532CF2DA61F8EB2534C935F3055 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93FD59729EE3E7C63623D8635C4596F4 /* Foundation.framework in Frameworks */,
-				3CFF92EB8052E363180F59F9F4ED61A7 /* XBAlertViewController.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		AD663C82250D6705594D4B8D48EA76FE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,34 +182,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BD9DF50FE6FBAD5524A171F8EDC32BF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9537E890BB95C1A473E33F21A1F3CA4A /* Foundation.framework in Frameworks */,
+				36E3B5F415756D10191422159BA28E88 /* XBAlertViewController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE47BF87794D3485C6254361672566B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B62189AE409861574981B9D33C3A61A3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		05FE682B8D97F3873AA30B2F24E72D53 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DC3D1ECAD6BB61D788E28E3330D7D240 /* MKDatePicker.modulemap */,
-				2E07436339658E8CE2A500195D27D4CD /* MKDatePicker-dummy.m */,
-				C3790EA415F0FC747E1ABDD991A11490 /* MKDatePicker-Info.plist */,
-				ADA74799C91ED6C8FC2882627B6EB4DE /* MKDatePicker-prefix.pch */,
-				05B69D1F78D24F6CB7D4BFF22F10DE10 /* MKDatePicker-umbrella.h */,
-				AE2B92AFF408264E70BC070B8C63FA9A /* MKDatePicker.debug.xcconfig */,
-				328381B74FD3EB4C32828FA01B4B16A2 /* MKDatePicker.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MKDatePicker";
-			sourceTree = "<group>";
-		};
-		0B1CF5880187E118CD1E8C31C4C962F2 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				FBFFE3BE64A44BD8D5E8CAD4C1698A9A /* Picker+Date.swift */,
-				C7140CA12DA8300E25D6604FE73EE622 /* Picker+Localized.swift */,
-			);
-			name = Extension;
-			path = MKDatePicker/Classes/Extension;
-			sourceTree = "<group>";
-		};
 		0C3A861C91F2C142AE57875137172336 /* Pods-MKDatePicker_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +230,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1CB280B060E616CD9239363D703CABD5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				633E58B81B0FB64ED0E8C8ACA4B3540E /* Langs.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		1F13BCAA9B0575ABBCEDBBF2E3ADE6D7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,23 +262,27 @@
 			path = "Target Support Files/Pods-MKDatePicker_Tests";
 			sourceTree = "<group>";
 		};
+		228010D6E18D79A9F9F970DFCF3212CC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C55F6D915B52C7AA3C4E6FA2D576DBBF /* MKDatePicker.modulemap */,
+				8D59B72F394DE94EA110CA66ACE8D3F4 /* MKDatePicker-dummy.m */,
+				55E5F85B33E476F6E4DEB7A2AA589A05 /* MKDatePicker-Info.plist */,
+				E925BD37AEB1A52F64462FAB9BCE0083 /* MKDatePicker-prefix.pch */,
+				859BCC79E45FBA3893B3B55F6E888776 /* MKDatePicker-umbrella.h */,
+				033954C46B9AD1C0FDA08DCCBE298B2C /* MKDatePicker.debug.xcconfig */,
+				592F5B157C24A02DE55D0E87C0735D25 /* MKDatePicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MKDatePicker";
+			sourceTree = "<group>";
+		};
 		2E27C8979AC75503351CBE06235E00FE /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				A9C9843ADF7684EAFB01E5900FB5A033 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		2EA40A6ED2D191FF8637A826756B2F8B /* View */ = {
-			isa = PBXGroup;
-			children = (
-				0ED5E63F89E3F764A05514FE299C5F91 /* PickerHeaderView.swift */,
-				D1AA694ACFFC7F0A2453DCA29560E4B6 /* PickerView.swift */,
-				78FABFCBA4373C3F2520EE7804EFCEA9 /* UIPickerView+DataSource.h */,
-			);
-			name = View;
-			path = MKDatePicker/Classes/View;
 			sourceTree = "<group>";
 		};
 		3DBB3E619898636212C1643DA9349DBA /* XBAlertViewController */ = {
@@ -308,18 +295,65 @@
 				33738967FEE76945610376A28C365401 /* XBShowAlertView+Public.swift */,
 				95A3EEC4E0BC5A586297C80452426EEA /* Support Files */,
 			);
+			name = XBAlertViewController;
 			path = XBAlertViewController;
 			sourceTree = "<group>";
 		};
-		8C39E76E0F3C8F00003BEA5884250BB0 /* Protocol */ = {
+		57C0A8B3A28E457B43EE513AD79739BB /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				75AB8C323485AD57E6A3AB9FA8A87258 /* PickerViewControllerDataSource.swift */,
-				AC0D1AFE41A584E96D7A4EFBCA0C0988 /* PickerViewControllerDelegate.swift */,
-				80968F0E24347575001DE871 /* Delegate.swift */,
+				260772CBC4430546854489236F4C1AA5 /* LICENSE */,
+				D9683F76DA5EFBEA5EADB009E9F9558F /* MKDatePicker.podspec */,
+				412760B6EE46F07EA2556E3D024F89C5 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		64C1605D5854A00040DBE31137D4E2B5 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				2B6D52F963B835889DADC3AE24100085 /* Delegate.swift */,
+				9000D512AB3A12E01EF79F7D610F20B1 /* PickerViewControllerDataSource.swift */,
+				6E00F0ABB9D5C5A291815C7B615FBFF9 /* PickerViewControllerDelegate.swift */,
 			);
 			name = Protocol;
 			path = MKDatePicker/Classes/Protocol;
+			sourceTree = "<group>";
+		};
+		72B4BB6FD0CCCB3C1AFBA0B5E2B6887F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A0A2641B9529883E0F2701E154BDABA7 /* PickerDateManager.swift */,
+				7E99C15936DFF60295CFCFC163FBD12A /* PickerDateModel.swift */,
+				AACF2E27EC881F5C421A924CBD3DA89A /* PickerDateType.swift */,
+			);
+			name = Model;
+			path = MKDatePicker/Classes/Model;
+			sourceTree = "<group>";
+		};
+		7FC575952FD962EBE2BC59E78E5BCE8B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				606E6FCA37E8EDBD804C6A05D2434487 /* PickerViewController.swift */,
+				C5D509A90547BA888372268098683C6B /* PickerViewController+Calculate.swift */,
+				FC4EAAE8C4EC61645C12BB23EB24E541 /* PickerViewController+Date.swift */,
+				AD81755D5C2CDB5D86AFD65D265AFC6B /* PickerViewController+DateHour.swift */,
+				ADADA6C50A3B24F7514192CA3A6377E3 /* PickerViewController+DateHourMinute.swift */,
+				84B2EB079673F763AA3EAE82F3FD0828 /* PickerViewController+DateHourMinuteSecond.swift */,
+				53485837FB73E12B239238146DE57690 /* PickerViewController+DateWeekHourMinute.swift */,
+				E8B2C531C35CB2964B6EAB2C329938BD /* PickerViewController+MinuteAndSecond.swift */,
+				06967437594DBBAE1292708F2A2F32BE /* PickerViewController+MonthDay.swift */,
+				6D665E22A7C16753DD5DD9B5B22EAC63 /* PickerViewController+MonthDayHour.swift */,
+				980652D9EE37188B4D25674BCD170B29 /* PickerViewController+MonthDayHourMinute.swift */,
+				9F2770219DF4A5BE6C1A8A1EA5B2934B /* PickerViewController+MonthDayHourMinuteSecond.swift */,
+				25E3663D0A7989662D5E130F098A5BC3 /* PickerViewController+Public.swift */,
+				E07E49D3897CB8278C4C20F9DA0A77B1 /* PickerViewController+Time.swift */,
+				C2CC4D26B28BA20E1F285F66C2ACA01A /* PickerViewController+TimeAndSecond.swift */,
+				D00E696F296D9377233C2FC3D70D00E3 /* PickerViewController+Year.swift */,
+				F5362A2AA10F5DEBE45B0916C39C2FB1 /* PickerViewController+YearAndMonth.swift */,
+			);
+			name = Controller;
+			path = MKDatePicker/Classes/Controller;
 			sourceTree = "<group>";
 		};
 		95A3EEC4E0BC5A586297C80452426EEA /* Support Files */ = {
@@ -340,46 +374,46 @@
 		A143E58F8E08875E0DCD706016B861F8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B1517DCBF384CB4EFFA1B72D779DAA8F /* MKDatePicker */,
+				A5B09F6722B384D0AD7BAF25F9A89692 /* MKDatePicker */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		AD3837E1C8B8C52C8ABF0AC7E0B7C242 /* Model */ = {
+		A5B09F6722B384D0AD7BAF25F9A89692 /* MKDatePicker */ = {
 			isa = PBXGroup;
 			children = (
-				83A7D4D0FF4AD9AA68C52D7A0EFF7963 /* PickerDateManager.swift */,
-				1172CD36091831EE5A0CBFD1D70D729A /* PickerDateModel.swift */,
-				1ECAACE0F1283A17C29FF899BD9B987A /* PickerDateType.swift */,
-			);
-			name = Model;
-			path = MKDatePicker/Classes/Model;
-			sourceTree = "<group>";
-		};
-		B1517DCBF384CB4EFFA1B72D779DAA8F /* MKDatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				E241B4424F6F58043662350DDC4C6299 /* Controller */,
-				0B1CF5880187E118CD1E8C31C4C962F2 /* Extension */,
-				AD3837E1C8B8C52C8ABF0AC7E0B7C242 /* Model */,
-				BD5DEEB56D35D1D6A6BA85A9268A4A89 /* Pod */,
-				8C39E76E0F3C8F00003BEA5884250BB0 /* Protocol */,
-				FE23EF6D62E42A8B4C97DB04A70EA92C /* Resources */,
-				05FE682B8D97F3873AA30B2F24E72D53 /* Support Files */,
-				2EA40A6ED2D191FF8637A826756B2F8B /* View */,
+				7FC575952FD962EBE2BC59E78E5BCE8B /* Controller */,
+				A6A30A6AA1C2F999C8CCE6E58B2CF861 /* Extension */,
+				72B4BB6FD0CCCB3C1AFBA0B5E2B6887F /* Model */,
+				57C0A8B3A28E457B43EE513AD79739BB /* Pod */,
+				64C1605D5854A00040DBE31137D4E2B5 /* Protocol */,
+				1CB280B060E616CD9239363D703CABD5 /* Resources */,
+				228010D6E18D79A9F9F970DFCF3212CC /* Support Files */,
+				C573DFD2D9EE17C7961406967416A1C4 /* View */,
 			);
 			name = MKDatePicker;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BD5DEEB56D35D1D6A6BA85A9268A4A89 /* Pod */ = {
+		A6A30A6AA1C2F999C8CCE6E58B2CF861 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				BFD7149519935D690830BA0F0341F084 /* LICENSE */,
-				D8D144887871242741588A91E5C774AF /* MKDatePicker.podspec */,
-				A7EA1CEC42D387962D912A84FD8F0171 /* README.md */,
+				90CBA7E8FB951D6CD4AB06AAD3B6DE03 /* Picker+Date.swift */,
+				0CA5F30593D0AF217C1F5401F48FB471 /* Picker+Localized.swift */,
 			);
-			name = Pod;
+			name = Extension;
+			path = MKDatePicker/Classes/Extension;
+			sourceTree = "<group>";
+		};
+		C573DFD2D9EE17C7961406967416A1C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30DE54515C0B34725549DF6579679A49 /* PickerHeaderView.swift */,
+				DD963B70BE7D3AAAA02E14DFCE344AD5 /* PickerView.swift */,
+				6E69BD08E04DF297640D1AC7AED336E5 /* UIPickerView+DataSource.h */,
+			);
+			name = View;
+			path = MKDatePicker/Classes/View;
 			sourceTree = "<group>";
 		};
 		C7E54C2DA46AD789C4413E39203AD782 /* Frameworks */ = {
@@ -412,47 +446,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E241B4424F6F58043662350DDC4C6299 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				5BEDDE8D95CAAC4F451D2F3E0D71E7BA /* PickerViewController.swift */,
-				441B3568E391E6CE2CABE90D67EEB1C6 /* PickerViewController+Calculate.swift */,
-				D72AE9E00ABB4A2721CD45FF084A6E88 /* PickerViewController+Date.swift */,
-				18577A23AB8BC1EF4BBFC39D1A1C24D3 /* PickerViewController+DateHour.swift */,
-				62EE50C87C49C5279B49F3E75612FF3E /* PickerViewController+DateHourMinute.swift */,
-				086A9F83A7B18FAFBFFE91FCD86D857A /* PickerViewController+DateHourMinuteSecond.swift */,
-				1D5F8FDFA1077721E86A1450040D6FBF /* PickerViewController+MinuteAndSecond.swift */,
-				AA9E5AA177DB9AD947F07F0E00E0B2FE /* PickerViewController+MonthDay.swift */,
-				F5E1ED6505C5AA7EB60DC81D50F0794A /* PickerViewController+MonthDayHour.swift */,
-				76D9FAFBC917CCAC031B9D51E2910511 /* PickerViewController+MonthDayHourMinute.swift */,
-				BD63527260F923EB3DAB6654665CE9F2 /* PickerViewController+MonthDayHourMinuteSecond.swift */,
-				24BAC8E7C6DE9A77F601320CB1BB4880 /* PickerViewController+Public.swift */,
-				27B562345361458AF292424FBC4BB118 /* PickerViewController+Time.swift */,
-				5F954B9F723E0801C9092DECE5567E11 /* PickerViewController+TimeAndSecond.swift */,
-				A0DBECCB4603F0D1D1767C00E8DEB4CE /* PickerViewController+Year.swift */,
-				42A92BE69AE600E54FA712C2A050811F /* PickerViewController+YearAndMonth.swift */,
-				80833C52249764B200658BF5 /* PickerViewController+DateWeekHourMinute.swift */,
-			);
-			name = Controller;
-			path = MKDatePicker/Classes/Controller;
-			sourceTree = "<group>";
-		};
-		FE23EF6D62E42A8B4C97DB04A70EA92C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				F51A63501069400A3EECC964A4260AEC /* Langs.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2DF58703545EA3290417CC543A05FFB8 /* Headers */ = {
+		2B685DE293DC780F880C5C95033F7CDC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7E6FDAFF2AD927139BB84924E523FC0 /* XBAlertViewController-umbrella.h in Headers */,
+				7292CEAB47F450F7CC06A61A373ACCF7 /* MKDatePicker-umbrella.h in Headers */,
+				881686A32A19AB0AD6B2FA68F884FC3B /* UIPickerView+DataSource.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,12 +466,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B00B2D8E0CDE26151FFC0505E61564EA /* Headers */ = {
+		4B9951058EE5F8E727DE745E7788FF64 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA18BB51AB45EC936336C4126F6FC81E /* MKDatePicker-umbrella.h in Headers */,
-				C043FB74C6F8F09EC666D8F2D3EDA4C3 /* UIPickerView+DataSource.h in Headers */,
+				3C29D2EF77529F7CAFC84D7D202A64D0 /* XBAlertViewController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,17 +487,17 @@
 /* Begin PBXNativeTarget section */
 		28B32E9D5E5DA0947E29BAE3044FE624 /* MKDatePicker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 87D24566482B6C5DC26D3A23A91AA1FB /* Build configuration list for PBXNativeTarget "MKDatePicker" */;
+			buildConfigurationList = B1793FFC8167827F0E829680AC0F7F9E /* Build configuration list for PBXNativeTarget "MKDatePicker" */;
 			buildPhases = (
-				B00B2D8E0CDE26151FFC0505E61564EA /* Headers */,
-				4928178AD3B42DF1F6C6A41E5C1F0F5F /* Sources */,
-				40B5B532CF2DA61F8EB2534C935F3055 /* Frameworks */,
-				6032FBDD083954294FBDDE9C1E18946C /* Resources */,
+				2B685DE293DC780F880C5C95033F7CDC /* Headers */,
+				A0D7B102A07A179D22E2BF320B96019F /* Sources */,
+				BD9DF50FE6FBAD5524A171F8EDC32BF0 /* Frameworks */,
+				A9C2D04C9DE49DCC6B9A168FFD668F73 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				EE68596AB68B1E2C3417E29A43369CB2 /* PBXTargetDependency */,
+				1BD737BE3D28696CEAF8682042D2FA95 /* PBXTargetDependency */,
 			);
 			name = MKDatePicker;
 			productName = MKDatePicker;
@@ -525,12 +526,12 @@
 		};
 		DA25DDE41766A959DC2A863C7821F3D9 /* XBAlertViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC330D7AFC4D85A874AE48E85842E201 /* Build configuration list for PBXNativeTarget "XBAlertViewController" */;
+			buildConfigurationList = 8805F59BF448948C21CA318CE0E25C97 /* Build configuration list for PBXNativeTarget "XBAlertViewController" */;
 			buildPhases = (
-				2DF58703545EA3290417CC543A05FFB8 /* Headers */,
-				FFFA2093F9720E4F0CFDE8C040467BDD /* Sources */,
-				32F816C7F28C0C9AAAED2FB0B03406D1 /* Frameworks */,
-				07AA9D7BE61C5848AE33A6A1F21B46AE /* Resources */,
+				4B9951058EE5F8E727DE745E7788FF64 /* Headers */,
+				73A518B2B2005FDDE7B25D61A4771849 /* Sources */,
+				CE47BF87794D3485C6254361672566B6 /* Frameworks */,
+				2B52A1B9D32C29F6EC9083DADBED26EC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -591,18 +592,10 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		07AA9D7BE61C5848AE33A6A1F21B46AE /* Resources */ = {
+		2B52A1B9D32C29F6EC9083DADBED26EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6032FBDD083954294FBDDE9C1E18946C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				85914A428D5EA1320A3D67F07F91D87E /* Langs.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,6 +603,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9C2D04C9DE49DCC6B9A168FFD668F73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23B275222C0289EA9F87EEDAAAE79D85 /* Langs.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,57 +640,63 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4928178AD3B42DF1F6C6A41E5C1F0F5F /* Sources */ = {
+		73A518B2B2005FDDE7B25D61A4771849 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				190DFE4424365AE19D3150B8922F0062 /* MKDatePicker-dummy.m in Sources */,
-				35CAF8E3D48F10505AE59D37A4B1B91C /* Picker+Date.swift in Sources */,
-				6E13CD1F4F8E68D6CFFEB56D6EDB69B2 /* Picker+Localized.swift in Sources */,
-				7878456E5BF1502EF3B1D91397081AAE /* PickerDateManager.swift in Sources */,
-				A6AC826DD7FB6B27D507DF5789F16829 /* PickerDateModel.swift in Sources */,
-				2E418EB889DEA16FDD6E51FEF957CBCA /* PickerDateType.swift in Sources */,
-				73747447D9CE7CE15C23666F6A1D0CCD /* PickerHeaderView.swift in Sources */,
-				140B66B85A8C60FD05B7B2A449C22DAF /* PickerView.swift in Sources */,
-				BAC6F7EC142B81B3ADB136E0674E49CE /* PickerViewController+Calculate.swift in Sources */,
-				CC90366DF96FA85BBF6C98C02AEA14D5 /* PickerViewController+Date.swift in Sources */,
-				E5AA06B2659173F0B0D97F02025B8F1D /* PickerViewController+DateHour.swift in Sources */,
-				734C9BDBEFCA7B16C0C4E97CBA6C9259 /* PickerViewController+DateHourMinute.swift in Sources */,
-				80968F0F24347575001DE871 /* Delegate.swift in Sources */,
-				C3D77EC0946431F5CE7E699D9B99B7C7 /* PickerViewController+DateHourMinuteSecond.swift in Sources */,
-				0401CEAC3859BF07FB054E8795C9FCFD /* PickerViewController+MinuteAndSecond.swift in Sources */,
-				8EF8A40ECBCFEDEA84EC1D9307C7EE5D /* PickerViewController+MonthDay.swift in Sources */,
-				89597792516B10FBB883310F72BCAD6B /* PickerViewController+MonthDayHour.swift in Sources */,
-				79A61372C19EBB33374EC58D5A62E646 /* PickerViewController+MonthDayHourMinute.swift in Sources */,
-				80833C53249764B200658BF5 /* PickerViewController+DateWeekHourMinute.swift in Sources */,
-				41B1DBE7805331A4896E5DB704D08808 /* PickerViewController+MonthDayHourMinuteSecond.swift in Sources */,
-				7730818015A39E59E402D98717ADCF96 /* PickerViewController+Public.swift in Sources */,
-				79B97308C3E0570CD711AD7C89FB13F7 /* PickerViewController+Time.swift in Sources */,
-				51943DFE8C6A3EA00DC44F98E3CDB5B9 /* PickerViewController+TimeAndSecond.swift in Sources */,
-				B110CEEA923E0F51373332087288F286 /* PickerViewController+Year.swift in Sources */,
-				F7196AB122891D1B6445E0FFB89F6A64 /* PickerViewController+YearAndMonth.swift in Sources */,
-				E99330801E0B58CB8B2D58241F24F0A3 /* PickerViewController.swift in Sources */,
-				9B5C78A4E78C5A0FED69D0E536EEF6D1 /* PickerViewControllerDataSource.swift in Sources */,
-				E5D74E0CF3C36F0598B2E989DBEB5739 /* PickerViewControllerDelegate.swift in Sources */,
+				618DE9C7A306A8EF45BDF8B2B1A77DFE /* XBAlertAnimateType.swift in Sources */,
+				85E1DC7E30D956DF4CBA68966D99F3F5 /* XBAlertViewController-dummy.m in Sources */,
+				9E7B875CB3D0574FBEA4DFFF8CFBF7B6 /* XBShowAlertView+Animation.swift in Sources */,
+				C85BBC531C89B6A840EC4A53B7AEFAF4 /* XBShowAlertView+Layout.swift in Sources */,
+				A447F6CF1BA193879E6B4FCC121AEBDE /* XBShowAlertView+Public.swift in Sources */,
+				727F073C84E6AEC549EC1A1C9642DC1B /* XBShowAlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFFA2093F9720E4F0CFDE8C040467BDD /* Sources */ = {
+		A0D7B102A07A179D22E2BF320B96019F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B73C239F23D034CED3CAAA9CAEECBB8 /* XBAlertAnimateType.swift in Sources */,
-				30EE42A9886AE3FFE3D6287FDAFF0311 /* XBAlertViewController-dummy.m in Sources */,
-				EAFCE4A40600FC825D5C142F9E8BF2A7 /* XBShowAlertView+Animation.swift in Sources */,
-				9310D9A88B1991E24EBCAE30BC2E5913 /* XBShowAlertView+Layout.swift in Sources */,
-				8578D1E648D00BA33215BD4A83B5A1BA /* XBShowAlertView+Public.swift in Sources */,
-				47A4CD53BC9FA739B94BB3BFD2DE0A71 /* XBShowAlertView.swift in Sources */,
+				B903FA765992E2FFBCE3682DCC32A119 /* Delegate.swift in Sources */,
+				A7EBFBF4DA94D27C7FC055866E50A53E /* MKDatePicker-dummy.m in Sources */,
+				5058FA447C30C11B108479337FA54485 /* Picker+Date.swift in Sources */,
+				BBBF1D274D80B602A5AD7E7C84C2101E /* Picker+Localized.swift in Sources */,
+				9C2802AD1F8422C863F32B3434E5ECBF /* PickerDateManager.swift in Sources */,
+				BC0D9AD6EFE819F8979E7F67B452B05C /* PickerDateModel.swift in Sources */,
+				F9C1A5FA3CD4027577D89A6B856998CB /* PickerDateType.swift in Sources */,
+				A9E02F54E058117D3F15C078A2CDEE1A /* PickerHeaderView.swift in Sources */,
+				AB17A2596A1567718179BBAC269CCCDD /* PickerView.swift in Sources */,
+				67B886A6E12639E0D3DB0E4163C7B6FD /* PickerViewController+Calculate.swift in Sources */,
+				2CB14556BA71CA06CF48C3A41CC0E6C9 /* PickerViewController+Date.swift in Sources */,
+				1DA30F4749E7CE492EA3C42CF0C52E5B /* PickerViewController+DateHour.swift in Sources */,
+				E2765CE28249ADD340096B8C57A2F9DF /* PickerViewController+DateHourMinute.swift in Sources */,
+				1607E146A23F6B818AF9DE193203B60E /* PickerViewController+DateHourMinuteSecond.swift in Sources */,
+				7E8113804AF12926FA0A7B9EFB95BC78 /* PickerViewController+DateWeekHourMinute.swift in Sources */,
+				5755345F93264A77F20AA6D360B6E31E /* PickerViewController+MinuteAndSecond.swift in Sources */,
+				E02B36388FA0943E4A19B150480A859D /* PickerViewController+MonthDay.swift in Sources */,
+				0D2A11BAFE298F298082D8FFF19F27F8 /* PickerViewController+MonthDayHour.swift in Sources */,
+				F9355114D3E449DFA69BE0BDB37AD8C3 /* PickerViewController+MonthDayHourMinute.swift in Sources */,
+				4133A19F3DB3A3F922C4BBEDA3347DD6 /* PickerViewController+MonthDayHourMinuteSecond.swift in Sources */,
+				CAA861FE29C23D647BF7B09C4C9D3D65 /* PickerViewController+Public.swift in Sources */,
+				3CD3D9C0A1ECCDFBE70B1FC9997D59A1 /* PickerViewController+Time.swift in Sources */,
+				E3B3111793EBC48F1BA207D869936B6F /* PickerViewController+TimeAndSecond.swift in Sources */,
+				0C7CEBFA8A726D3D6E273192E9BBA90F /* PickerViewController+Year.swift in Sources */,
+				A078192238AFCA10429D005C0FC08E1C /* PickerViewController+YearAndMonth.swift in Sources */,
+				8BA11CC9DDBB77A404361CE4F8D6333F /* PickerViewController.swift in Sources */,
+				D5DD9E89E278829F1CAE67BE5AF6AC27 /* PickerViewControllerDataSource.swift in Sources */,
+				F5F45BFBCC2B46CF8891E024E7F80247 /* PickerViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1BD737BE3D28696CEAF8682042D2FA95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = XBAlertViewController;
+			target = DA25DDE41766A959DC2A863C7821F3D9 /* XBAlertViewController */;
+			targetProxy = 3E45290DBDA9A67CF19C444EAF0AAEFC /* PBXContainerItemProxy */;
+		};
 		28FC6081E0BF25E64DCC012FE244014B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MKDatePicker_Example";
@@ -707,12 +714,6 @@
 			name = XBAlertViewController;
 			target = DA25DDE41766A959DC2A863C7821F3D9 /* XBAlertViewController */;
 			targetProxy = E923C6973428BF95078E0DD24AF7537D /* PBXContainerItemProxy */;
-		};
-		EE68596AB68B1E2C3417E29A43369CB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = XBAlertViewController;
-			target = DA25DDE41766A959DC2A863C7821F3D9 /* XBAlertViewController */;
-			targetProxy = C7998AFE2894532B3322F019693E39B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -750,6 +751,38 @@
 			};
 			name = Debug;
 		};
+		21465D9AFA2908169178518353792F80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 592F5B157C24A02DE55D0E87C0735D25 /* MKDatePicker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MKDatePicker/MKDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKDatePicker/MKDatePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MKDatePicker/MKDatePicker.modulemap";
+				PRODUCT_MODULE_NAME = MKDatePicker;
+				PRODUCT_NAME = MKDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		28FD53E032C6383694CC7E2C63178B03 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6EA0D2FB52DA4375A33F2986147E14B4 /* Pods-MKDatePicker_Example.release.xcconfig */;
@@ -777,132 +810,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		947F5AE3856570BE9C24AA9AB8530DB2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 328381B74FD3EB4C32828FA01B4B16A2 /* MKDatePicker.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MKDatePicker/MKDatePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MKDatePicker/MKDatePicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MKDatePicker/MKDatePicker.modulemap";
-				PRODUCT_MODULE_NAME = MKDatePicker;
-				PRODUCT_NAME = MKDatePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A221650CE5855DE78AAD47B4DAD6FF1E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BFE0D134F419E1EEBC229C990D6B48C /* XBAlertViewController.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XBAlertViewController/XBAlertViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController.modulemap";
-				PRODUCT_MODULE_NAME = XBAlertViewController;
-				PRODUCT_NAME = XBAlertViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A611511A58CB3357EBFAC03122E9D575 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE2B92AFF408264E70BC070B8C63FA9A /* MKDatePicker.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MKDatePicker/MKDatePicker-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MKDatePicker/MKDatePicker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MKDatePicker/MKDatePicker.modulemap";
-				PRODUCT_MODULE_NAME = MKDatePicker;
-				PRODUCT_NAME = MKDatePicker;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A8E944CAF6A7292D39FBE050C2960B1A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 06E4FA38739EE5E489157B3ECEF38C36 /* XBAlertViewController.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/XBAlertViewController/XBAlertViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController.modulemap";
-				PRODUCT_MODULE_NAME = XBAlertViewController;
-				PRODUCT_NAME = XBAlertViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -963,7 +870,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -996,6 +904,37 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B578447CB43AF5B94CAEDA70A3FDE08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033954C46B9AD1C0FDA08DCCBE298B2C /* MKDatePicker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MKDatePicker/MKDatePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MKDatePicker/MKDatePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MKDatePicker/MKDatePicker.modulemap";
+				PRODUCT_MODULE_NAME = MKDatePicker;
+				PRODUCT_NAME = MKDatePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1066,6 +1005,38 @@
 			};
 			name = Debug;
 		};
+		BA01562190422F0115A46E5F8E1BA881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06E4FA38739EE5E489157B3ECEF38C36 /* XBAlertViewController.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XBAlertViewController/XBAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController.modulemap";
+				PRODUCT_MODULE_NAME = XBAlertViewController;
+				PRODUCT_NAME = XBAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		BE20438A82E6D6F95BCD401D0DA49E40 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76E25A88AE3833DF78843709AEB6F5B1 /* Pods-MKDatePicker_Tests.release.xcconfig */;
@@ -1100,6 +1071,37 @@
 			};
 			name = Release;
 		};
+		FEA234D1B582955125BE67D806A0812E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BFE0D134F419E1EEBC229C990D6B48C /* XBAlertViewController.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/XBAlertViewController/XBAlertViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/XBAlertViewController/XBAlertViewController.modulemap";
+				PRODUCT_MODULE_NAME = XBAlertViewController;
+				PRODUCT_NAME = XBAlertViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1121,11 +1123,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		87D24566482B6C5DC26D3A23A91AA1FB /* Build configuration list for PBXNativeTarget "MKDatePicker" */ = {
+		8805F59BF448948C21CA318CE0E25C97 /* Build configuration list for PBXNativeTarget "XBAlertViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A611511A58CB3357EBFAC03122E9D575 /* Debug */,
-				947F5AE3856570BE9C24AA9AB8530DB2 /* Release */,
+				FEA234D1B582955125BE67D806A0812E /* Debug */,
+				BA01562190422F0115A46E5F8E1BA881 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1139,11 +1141,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC330D7AFC4D85A874AE48E85842E201 /* Build configuration list for PBXNativeTarget "XBAlertViewController" */ = {
+		B1793FFC8167827F0E829680AC0F7F9E /* Build configuration list for PBXNativeTarget "MKDatePicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A221650CE5855DE78AAD47B4DAD6FF1E /* Debug */,
-				A8E944CAF6A7292D39FBE050C2960B1A /* Release */,
+				B578447CB43AF5B94CAEDA70A3FDE08D /* Debug */,
+				21465D9AFA2908169178518353792F80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
