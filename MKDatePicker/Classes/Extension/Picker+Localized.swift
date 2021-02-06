@@ -32,7 +32,7 @@ public enum Language: String {
         guard let language = NSLocale.preferredLanguages.first else { return .en }
         if language.contains(Language.zhHans.rawValue) { return .zhHans }
         
-        return .en
+        return .zhHans
     }
 }
 
