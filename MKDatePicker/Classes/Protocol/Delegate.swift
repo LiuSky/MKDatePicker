@@ -20,7 +20,7 @@ public class Delegate<Input, Output> {
         }
     }
     
-    func callAsFunction(_ input: Input) -> Output? {
+    public func callAsFunction(_ input: Input) -> Output? {
         return block?(input)
     }
 }

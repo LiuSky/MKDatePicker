@@ -21,6 +21,7 @@
   },
   "source_files": [
     "MKDatePicker/Classes/Controller/",
+    "MKDatePicker/Classes/DatePicker/",
     "MKDatePicker/Classes/Extension/",
     "MKDatePicker/Classes/Model/",
     "MKDatePicker/Classes/View/",

@@ -14,7 +14,7 @@ TODO: Add long description of the pod here.
   
   s.swift_version         = '5.0'
   s.ios.deployment_target = '9.0'
-  s.source_files  = "MKDatePicker/Classes/Controller/", "MKDatePicker/Classes/Extension/", "MKDatePicker/Classes/Model/", "MKDatePicker/Classes/View/", "MKDatePicker/Classes/Protocol/"
+  s.source_files  = "MKDatePicker/Classes/Controller/", "MKDatePicker/Classes/DatePicker/", "MKDatePicker/Classes/Extension/", "MKDatePicker/Classes/Model/", "MKDatePicker/Classes/View/", "MKDatePicker/Classes/Protocol/"
   s.resources = 'MKDatePicker/Assets/Langs.bundle'
   s.dependency 'XBAlertViewController', '~> 1.0.1'
 end
