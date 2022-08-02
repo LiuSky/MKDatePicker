@@ -81,7 +81,7 @@ extension ViewController: UITableViewDelegate {
             dateFormatType = DateFormatType.custom("yyyy")
             minimumDate = Date()
             maximumDate = dfmatter.date(from: "2100")
-            selectDate = dfmatter.date(from: "2021")
+            selectDate = dfmatter.date(from: "2030")
             selectedAttributes = [NSAttributedString.Key.foregroundColor : UIColor.red,
                                   NSAttributedString.Key.font: UIFont.systemFont(ofSize: 22, weight: UIFont.Weight.medium)]
         case .yearAndMonth:
@@ -187,15 +187,15 @@ extension ViewController: UITableViewDelegate {
             selectDate = Date()
         }
         
-        let contentView = PickerViewController()
-        contentView.type = type
-        contentView.headerView.title = NSAttributedString(string: headerTitle, attributes: [NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 16),
-                                                                                 NSAttributedString.Key.foregroundColor: UIColor.black])
-        contentView.selectDate = selectDate
-        contentView.maximumDate = maximumDate
-        contentView.minimumDate = minimumDate
-        contentView.selectedAttributes = selectedAttributes
-        contentView.lineColor = UIColor.red
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        let contentView = DatePickerView()
+        contentView.pickerView.type = type
+        contentView.pickerView.selectDate = selectDate
+        contentView.pickerView.maximumDate = maximumDate
+        contentView.pickerView.minimumDate = minimumDate
+        contentView.pickerView.selectedAttributes = selectedAttributes
+        contentView.pickerView.lineColor = UIColor.red
         contentView.confirmCallBack.delegate(on: self, block: { (weakSelf, arg1) in
             let (_, result) = arg1
             debugPrint(result.toString(format: dateFormatType))
@@ -204,6 +204,22 @@ extension ViewController: UITableViewDelegate {
             debugPrint(weakSelf)
         }
         contentView.show()
-        tableView.deselectRow(at: indexPath, animated: true)
+//
+        
+//        let contentView = PickerViewController()
+//        contentView.type = type
+//        contentView.selectDate = selectDate
+//        contentView.maximumDate = maximumDate
+//        contentView.minimumDate = minimumDate
+//        contentView.selectedAttributes = selectedAttributes
+//        contentView.lineColor = UIColor.red
+//        contentView.confirmCallBack.delegate(on: self, block: { (weakSelf, arg1) in
+//            let (_, result) = arg1
+//            debugPrint(result.toString(format: dateFormatType))
+//        })
+//        contentView.cancelCallBack.delegate(on: self) { (weakSelf, view) in
+//            debugPrint(weakSelf)
+//        }
+//        contentView.show()
     }
 }
