@@ -15,7 +15,6 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A1F6C1328D77DD58AD7D8E7E /* Pods_MKDatePicker_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D221AB95652D266BA2FA818 /* Pods_MKDatePicker_Example.framework */; };
 		D54557589F81B2141F71CCED /* Pods_MKDatePicker_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 213577D207BF1AE1505C1C01 /* Pods_MKDatePicker_Tests.framework */; };
-		DBCFF4FA289268FF00629114 /* DatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBCFF4F9289268FF00629114 /* DatePickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		8D4BFC7C2EDE6BE721241652 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D09683732121CBCFBA9F3683 /* Pods-MKDatePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKDatePicker_Tests.release.xcconfig"; path = "Target Support Files/Pods-MKDatePicker_Tests/Pods-MKDatePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D2630AFB1C9A21199539537B /* Pods-MKDatePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKDatePicker_Example.release.xcconfig"; path = "Target Support Files/Pods-MKDatePicker_Example/Pods-MKDatePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
-		DBCFF4F9289268FF00629114 /* DatePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +95,6 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				DBCFF4F9289268FF00629114 /* DatePickerView.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -337,7 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBCFF4FA289268FF00629114 /* DatePickerView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);

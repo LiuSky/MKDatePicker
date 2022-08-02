@@ -189,12 +189,13 @@ extension ViewController: UITableViewDelegate {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let contentView = DatePickerView()
+        let contentView = MKDatePickerViewController()
         contentView.pickerView.type = type
         contentView.pickerView.selectDate = selectDate
         contentView.pickerView.maximumDate = maximumDate
         contentView.pickerView.minimumDate = minimumDate
         contentView.pickerView.selectedAttributes = selectedAttributes
+        contentView.headerView.title = NSAttributedString(string: headerTitle)
         contentView.pickerView.lineColor = UIColor.red
         contentView.confirmCallBack.delegate(on: self, block: { (weakSelf, arg1) in
             let (_, result) = arg1
@@ -204,22 +205,5 @@ extension ViewController: UITableViewDelegate {
             debugPrint(weakSelf)
         }
         contentView.show()
-//
-        
-//        let contentView = PickerViewController()
-//        contentView.type = type
-//        contentView.selectDate = selectDate
-//        contentView.maximumDate = maximumDate
-//        contentView.minimumDate = minimumDate
-//        contentView.selectedAttributes = selectedAttributes
-//        contentView.lineColor = UIColor.red
-//        contentView.confirmCallBack.delegate(on: self, block: { (weakSelf, arg1) in
-//            let (_, result) = arg1
-//            debugPrint(result.toString(format: dateFormatType))
-//        })
-//        contentView.cancelCallBack.delegate(on: self) { (weakSelf, view) in
-//            debugPrint(weakSelf)
-//        }
-//        contentView.show()
     }
 }

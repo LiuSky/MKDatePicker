@@ -41,7 +41,7 @@ private extension Bundle {
     
     static let module: Bundle = {
         
-        let frameworkBundle = Bundle(for: PickerViewController.self)
+        let frameworkBundle = Bundle(for: MKDatePickerViewController.self)
         
         guard let path = frameworkBundle.path(forResource: "Langs", ofType: "bundle"),
             let bundle = Bundle(path: path) else

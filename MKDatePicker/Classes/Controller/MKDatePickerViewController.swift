@@ -1,16 +1,18 @@
 //
-//  DatePickerView.swift
-//  MKDatePicker_Example
-//
-//  Created by linjw on 2022/7/28.
-//  Copyright © 2022 CocoaPods. All rights reserved.
+//  MKDatePickerViewController.swift
+//  Created on 2022/8/2
+//  Description <#文件描述#>
+//  PD <#产品文档地址#>
+//  Design <#设计文档地址#>
+//  Copyright © 2022 WZLY. All rights reserved.
+//  @author 刘小彬(liuxiaomike@gmail.com)   
 //
 
 import UIKit
 import XBAlertViewController
-import MKDatePicker
 
-public class DatePickerView: UIView {
+/// MARK - 默认控制器
+open class MKDatePickerViewController: UIView {
     
     /// 取消回掉
     public let cancelCallBack = Delegate<DatePicker, Void>()
@@ -23,33 +25,24 @@ public class DatePickerView: UIView {
     
     /// 选择器
     public lazy var pickerView: DatePicker = {
-        let it = DatePicker()
-        it.translatesAutoresizingMaskIntoConstraints = false
-        return it
-    }()
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        return $0
+    }(DatePicker())
     
+    /// 头部视图
     public lazy var headerView: PickerHeaderView = {
-        let it = PickerHeaderView()
-        
-        it.translatesAutoresizingMaskIntoConstraints = false
-        it.delegate = self
-        return it
-    }()
+        $0.translatesAutoresizingMaskIntoConstraints = false
+        $0.delegate = self
+        return $0
+    }(PickerHeaderView())
     
-//    /// 头部视图
-//    public private(set) lazy var headerView: PickerHeaderView = {
-//        $0.translatesAutoresizingMaskIntoConstraints = false
-////        $0.delegate = self
-//        return $0
-//    }(PickerHeaderView())
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         self.setupUI()
     }
     
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -76,23 +69,15 @@ public class DatePickerView: UIView {
             pickerView.leadingAnchor.constraint(equalTo: leadingAnchor),
             pickerView.trailingAnchor.constraint(equalTo: trailingAnchor),
             pickerView.topAnchor.constraint(equalTo: headerView.bottomAnchor),
-//            pickerView.heightAnchor.constraint(equalToConstant: pickerViewHeight),
             pickerView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -safeAreaInsetsBottom),
         ])
     }
-    
-//    public override func willMove(toSuperview newSuperview: UIView?) {
-//        super.willMove(toSuperview: newSuperview)
-//        if let _ = newSuperview {
-//            setupUI()
-//        }
-//    }
     
 }
 
 
 // MARK: - DateHeaderViewDelegate
-extension DatePickerView: PickerHeaderViewDelegate {
+extension MKDatePickerViewController: PickerHeaderViewDelegate {
 
     public func dateHeaderView(_ headerView: PickerHeaderView, cancel: UIButton) {
 
@@ -102,15 +87,13 @@ extension DatePickerView: PickerHeaderViewDelegate {
 
     public func dateHeaderView(_ headerView: PickerHeaderView, confirm: UIButton) {
 
-//        let dateString = self.pickerViewpickerViewProtocol.pickerContentView(self.pickerView)
-//        let date = Date(fromString: dateString, format: DateFormatType.custom(type.stringFormat))!
         confirmCallBack((self.pickerView, self.pickerView.selectDate!))
         dismiss()
     }
 }
 
 
-extension DatePickerView {
+public extension MKDatePickerViewController {
     
     /// 显示视图
     /// - Parameters:

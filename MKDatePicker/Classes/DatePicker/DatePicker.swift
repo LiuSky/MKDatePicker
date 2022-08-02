@@ -143,7 +143,6 @@ public class DatePicker: UIView {
             case .dateWeekHourMinute:
                 pickerViewProtocol = DateWeekHourMinute()
             }
-//            pickerView.reloadAllComponents()
         }
     }
     
@@ -188,7 +187,6 @@ public class DatePicker: UIView {
         if let _ = newSuperview {
             configView()
             configLocation()
-//            configDataSource()
         }
     }
     
