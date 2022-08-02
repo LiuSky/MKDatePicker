@@ -115,7 +115,7 @@ extension ViewController: UITableViewDelegate {
             dateFormatType = DateFormatType.custom("yyyy-MM-dd HH:mm")
             minimumDate = dfmatter.date(from: "1990-07-21 01:10")
             maximumDate = dfmatter.date(from: "2000-08-21 22:55")
-            selectDate = dfmatter.date(from: "1990-08-21 06:08")
+            selectDate = dfmatter.date(from: "1990-08-21 06:10")
         case .dateHourMinuteSecond:
             
             dfmatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
@@ -197,6 +197,7 @@ extension ViewController: UITableViewDelegate {
         contentView.pickerView.selectedAttributes = selectedAttributes
         contentView.headerView.title = NSAttributedString(string: headerTitle)
         contentView.pickerView.lineColor = UIColor.red
+        contentView.pickerView.minuteSteps = 5
         contentView.confirmCallBack.delegate(on: self, block: { (weakSelf, arg1) in
             let (_, result) = arg1
             debugPrint(result.toString(format: dateFormatType))

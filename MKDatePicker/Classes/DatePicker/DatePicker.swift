@@ -52,6 +52,12 @@ public class DatePicker: UIView {
         }
     }
     
+    /// 分钟步进
+    public var minuteSteps: Int = 1
+    
+    /// 秒钟步进
+    public var secondSteps: Int = 1
+    
     /// 年索引
     internal var yearIndex: Int = 0
     

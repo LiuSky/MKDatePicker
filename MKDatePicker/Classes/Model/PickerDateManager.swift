@@ -267,11 +267,11 @@ extension PickerDateManager {
     /// 获取分数组
     /// - Parameter date: 当前选中的日期
     /// - Returns: 分数组
-    public func findCurrentMinute(date: Date) -> [PickerDateModel] {
+    public func findCurrentMinute(date: Date, steps: Int = 1) -> [PickerDateModel] {
         
         var minimum = 0
         var maximum = 59
-        
+        let toSteps = steps <= 0 || steps > 60 ? 1 : steps
         guard let selectedYear = date.component(DateComponentType.year),
             let selectedMonth = date.component(DateComponentType.month),
             let selectedDay = date.component(DateComponentType.day),
@@ -287,7 +287,7 @@ extension PickerDateManager {
             let maxMinute = maximumComponents.minute,
             let minMinute = minimumComponents.minute else {
                 
-                let array = (minimum...maximum).map { minute -> PickerDateModel in
+            let array = (minimum...maximum).filter { $0 % toSteps == 0 }.map { minute -> PickerDateModel in
                     if minute < 10 {
                         return PickerDateModel(id: "0\(minute)", name: "\(minute)\("picker.minute".localized())")
                     } else {
@@ -307,7 +307,7 @@ extension PickerDateManager {
             maximum = maxMinute
         }
         
-        let array = (minimum...maximum).map { minute -> PickerDateModel in
+        let array = (minimum...maximum).filter { $0 % toSteps == 0 }.map { minute -> PickerDateModel in
             if minute < 10 {
                 return PickerDateModel(id: "0\(minute)", name: "\(minute)\("picker.minute".localized())")
             } else {
@@ -320,11 +320,11 @@ extension PickerDateManager {
     /// 获取秒数组
     /// - Parameter date: 当前选中的日期
     /// - Returns: 秒数组
-    public func findCurrentSecond(date: Date) -> [PickerDateModel] {
+    public func findCurrentSecond(date: Date, steps: Int = 1) -> [PickerDateModel] {
         
         var minimum = 0
         var maximum = 59
-        
+        let toSteps = steps <= 0 || steps > 60 ? 1 : steps
         guard let selectedYear = date.component(DateComponentType.year),
             let selectedMonth = date.component(DateComponentType.month),
             let selectedDay = date.component(DateComponentType.day),
@@ -343,7 +343,7 @@ extension PickerDateManager {
             let maxSecond = maximumComponents.second,
             let minSecond = minimumComponents.second else {
                 
-                let array = (minimum...maximum).map { second -> PickerDateModel in
+            let array = (minimum...maximum).filter { $0 % toSteps == 0 }.map { second -> PickerDateModel in
                     if second < 10 {
                         return PickerDateModel(id: "0\(second)", name: "\(second)\("picker.second".localized())")
                     } else {
@@ -363,7 +363,7 @@ extension PickerDateManager {
             maximum = maxSecond
         }
         
-        let array = (minimum...maximum).map { second -> PickerDateModel in
+        let array = (minimum...maximum).filter { $0 % toSteps == 0 }.map { second -> PickerDateModel in
             if second < 10 {
                 return PickerDateModel(id: "0\(second)", name: "\(second)\("picker.second".localized())")
             } else {
