@@ -78,21 +78,21 @@ internal extension DatePicker {
         case .year, .yearAndMonth, .date, .dateHour, .dateHourMinute, .dateHourMinuteSecond:
             let dateString = yearList[yearIndex].id + "-" + monthList[monthIndex].id + "-" + dayList[dayIndex].id + " " + hoursList[hoursIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("yyyy-MM-dd HH"))!
-            minuteList = dateManager.findCurrentMinute(date: date)
+            minuteList = dateManager.findCurrentMinute(date: date, steps: self.minuteSteps)
         case .monthDay, .monthDayHour, .monthDayHourMinute, .monthDayHourMinuteSecond:
             let dateString = monthList[monthIndex].id + "-" + dayList[dayIndex].id + " " + hoursList[hoursIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("MM-dd HH"))!
-            minuteList = dateManager.findCurrentMinute(date: date)
+            minuteList = dateManager.findCurrentMinute(date: date, steps: self.minuteSteps)
         case .time, .timeAndSecond:
             let dateString = hoursList[hoursIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("HH"))!
-            minuteList = dateManager.findCurrentMinute(date: date)
+            minuteList = dateManager.findCurrentMinute(date: date, steps: self.minuteSteps)
         case .dateWeekHourMinute:
             let date = Date(fromString: dateWeekList[weekIndex].id + " " + hoursList[hoursIndex].id, format: DateFormatType.custom("yyyy-MM-dd HH"))!
-            minuteList = dateManager.findCurrentMinute(date: date)
+            minuteList = dateManager.findCurrentMinute(date: date, steps: self.minuteSteps)
         default:
             let currentString = Date().toString(format: DateFormatType.custom("mm:ss"))
-            minuteList = dateManager.findCurrentMinute(date: Date(fromString: "\(currentString)", format: DateFormatType.custom("mm:ss"))!)
+            minuteList = dateManager.findCurrentMinute(date: Date(fromString: "\(currentString)", format: DateFormatType.custom("mm:ss"))!, steps: self.minuteSteps)
         }
     }
     
@@ -103,19 +103,19 @@ internal extension DatePicker {
         case .year, .yearAndMonth, .date, .dateHour, .dateHourMinute, .dateHourMinuteSecond:
             let dateString = yearList[yearIndex].id + "-" + monthList[monthIndex].id + "-" + dayList[dayIndex].id + " " + hoursList[hoursIndex].id + ":" + minuteList[minuteIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("yyyy-MM-dd HH:mm"))!
-            secondList = dateManager.findCurrentSecond(date: date)
+            secondList = dateManager.findCurrentSecond(date: date, steps: secondSteps)
         case .monthDay, .monthDayHour, .monthDayHourMinute, .monthDayHourMinuteSecond:
             let dateString = monthList[monthIndex].id + "-" + dayList[dayIndex].id + " " + hoursList[hoursIndex].id + ":" + minuteList[minuteIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("MM-dd HH:mm"))!
-            secondList = dateManager.findCurrentSecond(date: date)
+            secondList = dateManager.findCurrentSecond(date: date, steps: secondSteps)
         case .time, .timeAndSecond:
             let dateString = hoursList[hoursIndex].id + ":" + minuteList[minuteIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("HH:mm"))!
-            secondList = dateManager.findCurrentSecond(date: date)
+            secondList = dateManager.findCurrentSecond(date: date, steps: secondSteps)
         default:
             let dateString = minuteList[minuteIndex].id
             let date = Date(fromString: dateString, format: DateFormatType.custom("mm"))!
-            secondList = dateManager.findCurrentSecond(date: date)
+            secondList = dateManager.findCurrentSecond(date: date, steps: secondSteps)
         }
     }
     
