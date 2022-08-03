@@ -1,5 +1,5 @@
 PODS:
-  - MKDatePicker (1.3.0):
+  - MKDatePicker (1.4.1):
     - XBAlertViewController (~> 1.0.1)
   - XBAlertViewController (1.0.1)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MKDatePicker: b4d295b89907c577596a08a194ee0f3c537cbab5
+  MKDatePicker: 981439fe8b8bb688c2fc6af030c69790a67ce357
   XBAlertViewController: f3cf6bdbaffed1322471f752104fa86001f05c4c
 
 PODFILE CHECKSUM: a56aa90a8d54e5ec22828a59a64bbd1e2a0e6ff9
