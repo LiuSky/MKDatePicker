@@ -1,6 +1,6 @@
 # MKDatePicker
 
-[![CI Status](https://img.shields.io/travis/LiuSky/MKDatePicker.svg?style=flat)](https://travis-ci.org/LiuSky/MKDatePicker)
+[![CI Status](https://img.shields.io/travis/LiuSky/MKDatePicker.svg?style=flat)](https://travis-ci.com/LiuSky/MKDatePicker)
 [![Version](https://img.shields.io/cocoapods/v/MKDatePicker.svg?style=flat)](https://cocoapods.org/pods/MKDatePicker)
 [![License](https://img.shields.io/cocoapods/l/MKDatePicker.svg?style=flat)](https://cocoapods.org/pods/MKDatePicker)
 [![Platform](https://img.shields.io/cocoapods/p/MKDatePicker.svg?style=flat)](https://cocoapods.org/pods/MKDatePicker)
