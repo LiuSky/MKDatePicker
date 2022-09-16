@@ -1,6 +1,6 @@
 # MKDatePicker
 
-[![build](https://github.com/LiuSky/MKDatePicker/workflows/build/badge.svg)](https://github.com/LiuSky/MKDatePicker/actions?query=workflow%3ASwift)
+[![Xcode - Build and Analyze](https://github.com/LiuSky/MKDatePicker/actions/workflows/objective-c-xcode.yml/badge.svg)](https://github.com/LiuSky/MKDatePicker/actions/workflows/objective-c-xcode.yml)
 [![Version](https://img.shields.io/cocoapods/v/MKDatePicker.svg?style=flat)](https://cocoapods.org/pods/MKDatePicker)
 [![License](https://img.shields.io/cocoapods/l/MKDatePicker.svg?style=flat)](https://cocoapods.org/pods/MKDatePicker)
 [![Platform](https://img.shields.io/cocoapods/p/MKDatePicker.svg?style=flat)](https://cocoapods.org/pods/MKDatePicker)
