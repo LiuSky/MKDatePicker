@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'MKDatePicker'
-  s.version          = '1.4.1'
+  s.version          = '1.4.2'
   s.summary          = 'A short description of MKDatePicker.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -16,5 +16,5 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '9.0'
   s.source_files  = "MKDatePicker/Classes/Controller/", "MKDatePicker/Classes/DatePicker/", "MKDatePicker/Classes/Extension/", "MKDatePicker/Classes/Model/", "MKDatePicker/Classes/View/", "MKDatePicker/Classes/Protocol/"
   s.resources = 'MKDatePicker/Assets/Langs.bundle'
-  s.dependency 'XBAlertViewController', '~> 1.0.1'
+  s.dependency 'XBAlertViewController', '~> 1.2.0'
 end

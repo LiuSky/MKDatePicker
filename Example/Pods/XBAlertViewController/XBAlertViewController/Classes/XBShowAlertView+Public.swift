@@ -82,6 +82,7 @@ extension XBShowAlertView {
                                      contentView: UIView,
                                      backgoundTapDismissEnable: Bool = true,
                                      isShowMask: Bool = true,
+                                     backgroundViewColor: UIColor? = nil,
                                      alertViewEdging: CGFloat = 0,
                                      alertViewOriginY: CGFloat = 0,
                                      delegate: XBShowAlertViewDelegate? = nil) -> XBShowAlertView {
@@ -92,6 +93,7 @@ extension XBShowAlertView {
         showView.alertStyle = alertStyle
         showView.alertViewOriginY = alertViewOriginY
         showView.alertViewEdging = alertViewEdging
+        showView.backgroundViewColor = backgroundViewColor ?? UIColor.black.withAlphaComponent(0.25)
         showView.isShowMask = isShowMask
         showView.show(inView: showInView)
         return showView

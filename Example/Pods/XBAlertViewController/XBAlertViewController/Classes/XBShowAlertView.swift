@@ -58,11 +58,18 @@ public final class XBShowAlertView: UIView {
         }
     }
     
+    /// 背景颜色
+    public var backgroundViewColor: UIColor = UIColor.black.withAlphaComponent(0.25) {
+        didSet {
+            self.backgroundView.backgroundColor = backgroundViewColor
+        }
+    }
+    
     /// 是否遮照
     public var isShowMask: Bool = true {
         didSet {
             if self.isShowMask {
-                self.backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.25)
+                self.backgroundView.backgroundColor = backgroundViewColor
             } else {
                 self.backgroundView.backgroundColor = UIColor.clear
             }
@@ -84,6 +91,11 @@ public final class XBShowAlertView: UIView {
     internal var contentViewHeight: CGFloat = 0
     /// 内容视图宽度
     internal var contentViewWidth: CGFloat = 0
+    
+    /// 内容宽度Anchor
+    internal var contentViewWidthAnchor: NSLayoutConstraint?
+    internal var contentViewHeightAnchor: NSLayoutConstraint?
+    
     
     /// 初始化弹出视图
     ///
@@ -109,5 +121,22 @@ public final class XBShowAlertView: UIView {
     @objc
     private func singleTap(sender: UITapGestureRecognizer) {
         dismiss()
+    }
+    
+    /// 更新布局
+    public func updateLayout(height: CGFloat = 0, width: CGFloat = 0) {
+        
+        /// 自动计算布局
+        if height == 0 || width == 0 {
+            
+            contentViewWidth = (self.superview?.frame.width ?? 0) - alertViewEdging * 2
+            let contentViewSize = contentView.systemLayoutSizeFitting(CGSize(width: contentViewWidth, height: 0.0), withHorizontalFittingPriority: UILayoutPriority.required, verticalFittingPriority: UILayoutPriority.fittingSizeLevel)
+            contentViewHeight = contentViewSize.height
+            
+        } else {
+            contentViewWidth = width
+            contentViewHeight = height
+        }
+        layoutAlertView()
     }
 }

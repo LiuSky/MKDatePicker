@@ -52,7 +52,7 @@ extension XBShowAlertView {
     }
     
     /// 计算布局
-    private func calculateLayout() {
+    internal func calculateLayout() {
         
         guard let contentView = self.contentView else {
             fatalError("内容视图不能为nil")
@@ -63,7 +63,6 @@ extension XBShowAlertView {
             contentViewHeight = contentView.frame.size.height
             contentViewWidth = contentView.frame.size.width
         } else {
-            
             contentViewWidth = superview!.frame.width - alertViewEdging * 2
             let contentViewSize = contentView.systemLayoutSizeFitting(CGSize(width: contentViewWidth, height: 0.0), withHorizontalFittingPriority: UILayoutPriority.required, verticalFittingPriority: UILayoutPriority.fittingSizeLevel)
             contentViewHeight = contentViewSize.height
@@ -72,12 +71,29 @@ extension XBShowAlertView {
     }
     
     /// 布局
-    private func layoutAlertView() {
-        
+    internal func layoutAlertView() {
+
         contentView.translatesAutoresizingMaskIntoConstraints = false
         contentView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-        contentView.widthAnchor.constraint(equalToConstant: contentViewWidth).isActive = true
-        contentView.heightAnchor.constraint(equalToConstant: contentViewHeight).isActive = true
+        
+        
+        if let contentViewWidthAnchor = contentViewWidthAnchor {
+            contentViewWidthAnchor.isActive = false
+            contentViewWidthAnchor.constant = contentViewWidth
+            contentViewWidthAnchor.isActive = true
+        } else {
+            contentViewWidthAnchor = contentView.widthAnchor.constraint(equalToConstant: contentViewWidth)
+            contentViewWidthAnchor?.isActive = true
+        }
+        
+        if let contentViewHeightAnchor = contentViewHeightAnchor {
+            contentViewHeightAnchor.isActive = false
+            contentViewHeightAnchor.constant = contentViewHeight
+            contentViewHeightAnchor.isActive = true
+        } else {
+            contentViewHeightAnchor = contentView.heightAnchor.constraint(equalToConstant: contentViewHeight)
+            contentViewHeightAnchor?.isActive = true
+        }
         
         switch alertStyle {
         case let .actionSheet(directionType):
