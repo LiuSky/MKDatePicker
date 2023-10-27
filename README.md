@@ -20,7 +20,7 @@
 
 
 ## Installation Cocoapods
-<pre><code class="ruby language-ruby">pod 'MKDatePicker', '~> 1.0.0'</code></pre>
+<pre><code class="ruby language-ruby">pod 'MKDatePicker', '~> 1.4.2'</code></pre>
 
 ## Use
 
